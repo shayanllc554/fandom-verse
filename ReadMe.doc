@@ -1,0 +1,85 @@
+========================================================================
+                      FANDOMVERSE — FAN WORLD NEXUS
+                                ReadMe.doc
+========================================================================
+
+PROJECT OVERVIEW
+------------------------------------------------------------------------
+FandomVerse_SourceCode (Fan World Nexus) is a dynamic, modern web application designed
+as a comprehensive portal and hub for pop culture enthusiasts. It brings
+together diverse fandoms across multiple categories including Anime,
+Gaming, Movies, TV Shows, K-Pop, Comics, and Manga.
+
+The application offers an engaging user experience with dynamic content
+rendering, article bookmarking, shopping cart functionality, theme switching
+(light/dark mode), media previews, character profiles, and interactive search.
+
+
+PROJECT STRUCTURE
+------------------------------------------------------------------------
+FandomVerse/
+├── index.html          # Main HTML markup and application entry point
+├── data.json           # JSON catalog containing articles, merch, events, etc.
+├── css/
+│   └── styles.css      # Main stylesheet with layout, animations, & themes
+├── js/
+│   ├── data.js         # Data management and loading utility
+│   └── main.js         # Core application logic, event handlers, & state
+└── assets/             # Media assets (images, icons, video clips)
+
+
+KEY FEATURES
+------------------------------------------------------------------------
+1. Fandom Hubs & Categories:
+   - Browse dedicated hubs for Anime, Gaming, Movies, TV Shows, K-Pop, 
+     Comics, and Manga.
+
+2. Dynamic Content Catalog:
+   - Articles, character profiles, upcoming events, and official merch
+     loaded directly from `data.json`.
+
+3. Interactive Search & Filtering:
+   - Real-time global search across all fandom topics and categories.
+
+4. User Experience & Customization:
+   - Bookmarking system for saving favorite articles/characters.
+   - Shopping cart modal for merch items.
+   - Light & Dark theme toggle with persistent user preferences.
+   - Mobile-responsive navigation drawer and breadcrumbs.
+
+
+GETTING STARTED
+------------------------------------------------------------------------
+To launch and run the project locally:
+
+1. Open `index.html` directly in any modern web browser (Chrome, Firefox,
+   Edge, Safari).
+   OR
+2. Serve the directory using any static web server solution:
+   - Using Python:
+       python -m http.server 8000
+   - Using Node.js live-server / http-server:
+       npx http-server .
+
+3. Open your browser and navigate to:
+   http://localhost:8000 (or the port provided by your server).
+
+
+TECHNOLOGIES USED
+------------------------------------------------------------------------
+- HTML5 (Semantic elements, accessible modal controls, breadcrumbs)
+- CSS3 (CSS Custom Properties, Flexbox, CSS Grid, Responsive Design)
+- JavaScript (Vanilla ES6+, Async/Fetch API, LocalStorage integration)
+- JSON (Structured data store for site content)
+
+
+DOCUMENTATION & MAINTAINER NOTES
+------------------------------------------------------------------------
+- Content updates can be managed by modifying `data.json`.
+- Styles and themes are controlled via CSS custom properties in `css/styles.css`.
+- Core interactive functions (cart, bookmarks, modals, theme toggles) are 
+  maintained in `js/main.js`.
+
+========================================================================
+                      Thank you for using FandomVerse!
+========================================================================

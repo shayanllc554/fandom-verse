@@ -1,0 +1,1827 @@
+{
+  "categories": [
+    {
+      "slug": "anime",
+      "name": "Anime",
+      "tagline": "Neon-lit worlds and legendary heroes",
+      "icon": "✨"
+    },
+    {
+      "slug": "gaming",
+      "name": "Gaming",
+      "tagline": "Press start on every adventure",
+      "icon": "🎮"
+    },
+    {
+      "slug": "movies",
+      "name": "Movies",
+      "tagline": "Big-screen epics and indie gems",
+      "icon": "🎬"
+    },
+    {
+      "slug": "tvshows",
+      "name": "TV Shows",
+      "tagline": "Binge-worthy stories, episode by episode",
+      "icon": "📺"
+    },
+    {
+      "slug": "kpop",
+      "name": "K-Pop",
+      "tagline": "Lightsticks up for every comeback",
+      "icon": "🎵"
+    },
+    {
+      "slug": "comics",
+      "name": "Comics",
+      "tagline": "Panels, capes and ink-stained legends",
+      "icon": "📖"
+    },
+    {
+      "slug": "manga",
+      "name": "Manga",
+      "tagline": "Screentone sagas from page one",
+      "icon": "📜"
+    }
+  ],
+  "images": {
+    "anime": "assets/anime.jpg",
+    "gaming": "assets/gaming.jpg",
+    "movies": "assets/movies.jpg",
+    "tvshows": "assets/tvshows.jpg",
+    "kpop": "assets/kpop.jpg",
+    "comics": "assets/comics.jpg",
+    "manga": "assets/manga.jpg",
+    "hero": "assets/hero.jpg"
+  },
+  "articles": [
+    {
+      "id": "anime-001",
+      "category": "anime",
+      "title": "The Rise of New-Gen Anime Studios",
+      "excerpt": "Independent studios are reshaping the anime landscape with bold art styles and shorter, tighter seasons.",
+      "body": "Independent studios are reshaping the anime landscape with bold art styles and shorter, tighter seasons.\n\nAcross the Anime community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Anime is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "article",
+      "tags": [
+        "industry",
+        "neon-blade-chronicles"
+      ],
+      "date": "2026-09-10",
+      "featured": true,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 5605
+    },
+    {
+      "id": "anime-002",
+      "category": "anime",
+      "title": "Why Slice-of-Life Is Having a Moment",
+      "excerpt": "Quiet, cozy storytelling has become the comfort watch of a restless generation.",
+      "body": "Quiet, cozy storytelling has become the comfort watch of a restless generation.\n\nAcross the Anime community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Anime is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "gallery",
+      "tags": [
+        "genres",
+        "skyward-academy"
+      ],
+      "date": "2026-08-10",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 2771
+    },
+    {
+      "id": "anime-003",
+      "category": "anime",
+      "title": "Inside the Soundtrack of Neon Blade Chronicles",
+      "excerpt": "How synthwave and traditional shamisen collided to create this season's most-hummed score.",
+      "body": "How synthwave and traditional shamisen collided to create this season's most-hummed score.\n\nAcross the Anime community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Anime is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "music",
+        "spirit-lantern"
+      ],
+      "date": "2026-07-10",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 6768
+    },
+    {
+      "id": "gaming-001",
+      "category": "gaming",
+      "title": "Indie Games That Redefined 2026",
+      "excerpt": "Small teams, massive ideas: the indie scene delivered the year's most memorable experiences.",
+      "body": "Small teams, massive ideas: the indie scene delivered the year's most memorable experiences.\n\nAcross the Gaming community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Gaming is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "gallery",
+      "tags": [
+        "indie",
+        "starforge-odyssey"
+      ],
+      "date": "2026-09-12",
+      "featured": true,
+      "trending": false,
+      "upcoming": false,
+      "popularity": 1250
+    },
+    {
+      "id": "gaming-002",
+      "category": "gaming",
+      "title": "The Future of Cloud Gaming",
+      "excerpt": "Streaming games is finally smooth — but what does it mean for ownership?",
+      "body": "Streaming games is finally smooth — but what does it mean for ownership?\n\nAcross the Gaming community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Gaming is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "tech",
+        "pixel-knights"
+      ],
+      "date": "2026-08-12",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 8613
+    },
+    {
+      "id": "gaming-003",
+      "category": "gaming",
+      "title": "Speedrunning Culture Explained",
+      "excerpt": "From frame-perfect tricks to charity marathons, speedrunners are gaming's athletes.",
+      "body": "From frame-perfect tricks to charity marathons, speedrunners are gaming's athletes.\n\nAcross the Gaming community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Gaming is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "audio",
+      "tags": [
+        "community",
+        "void-runners"
+      ],
+      "date": "2026-07-12",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 3817
+    },
+    {
+      "id": "movies-001",
+      "category": "movies",
+      "title": "The Return of Practical Effects",
+      "excerpt": "Audiences are craving tangible worlds again — and directors are listening.",
+      "body": "Audiences are craving tangible worlds again — and directors are listening.\n\nAcross the Movies community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Movies is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "filmmaking",
+        "the-last-horizon"
+      ],
+      "date": "2026-09-14",
+      "featured": true,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 4243
+    },
+    {
+      "id": "movies-002",
+      "category": "movies",
+      "title": "Sci-Fi Blockbusters to Watch This Winter",
+      "excerpt": "A guide to the biggest space epics landing in theaters this season.",
+      "body": "A guide to the biggest space epics landing in theaters this season.\n\nAcross the Movies community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Movies is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "audio",
+      "tags": [
+        "upcoming",
+        "midnight-carnival"
+      ],
+      "date": "2026-08-14",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 1786
+    },
+    {
+      "id": "movies-003",
+      "category": "movies",
+      "title": "How Film Scores Shape Emotion",
+      "excerpt": "Composers reveal the secret techniques that make you cry on cue.",
+      "body": "Composers reveal the secret techniques that make you cry on cue.\n\nAcross the Movies community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Movies is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "article",
+      "tags": [
+        "music",
+        "echoes-of-mars"
+      ],
+      "date": "2026-07-14",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 9328
+    },
+    {
+      "id": "tvshows-001",
+      "category": "tvshows",
+      "title": "The Golden Age of Limited Series",
+      "excerpt": "Why eight-episode stories are beating out endless seasons.",
+      "body": "Why eight-episode stories are beating out endless seasons.\n\nAcross the TV Shows community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? TV Shows is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "audio",
+      "tags": [
+        "industry",
+        "harbor-lights"
+      ],
+      "date": "2026-09-16",
+      "featured": true,
+      "trending": false,
+      "upcoming": false,
+      "popularity": 9755
+    },
+    {
+      "id": "tvshows-002",
+      "category": "tvshows",
+      "title": "Binge vs Weekly: The Great Debate",
+      "excerpt": "Streaming platforms are rethinking how fans watch — and talk about — shows.",
+      "body": "Streaming platforms are rethinking how fans watch — and talk about — shows.\n\nAcross the TV Shows community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? TV Shows is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "article",
+      "tags": [
+        "culture",
+        "the-quiet-kingdom"
+      ],
+      "date": "2026-08-16",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 6799
+    },
+    {
+      "id": "tvshows-003",
+      "category": "tvshows",
+      "title": "Behind the Scenes of Signal Lost",
+      "excerpt": "The cast and crew on filming a thriller in total darkness.",
+      "body": "The cast and crew on filming a thriller in total darkness.\n\nAcross the TV Shows community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? TV Shows is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "gallery",
+      "tags": [
+        "production",
+        "signal-lost"
+      ],
+      "date": "2026-07-16",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 1112
+    },
+    {
+      "id": "kpop-001",
+      "category": "kpop",
+      "title": "How Fandoms Power K-Pop's Global Reach",
+      "excerpt": "Fan translators, streaming parties and lightstick oceans: the engine behind the charts.",
+      "body": "Fan translators, streaming parties and lightstick oceans: the engine behind the charts.\n\nAcross the K-Pop community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? K-Pop is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "article",
+      "tags": [
+        "fandom",
+        "nova9"
+      ],
+      "date": "2026-09-18",
+      "featured": true,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 2663
+    },
+    {
+      "id": "kpop-002",
+      "category": "kpop",
+      "title": "Choreography Breakdown: NOVA9's 'Orbit'",
+      "excerpt": "A step-by-step look at the most viral dance challenge of the year.",
+      "body": "A step-by-step look at the most viral dance challenge of the year.\n\nAcross the K-Pop community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? K-Pop is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "gallery",
+      "tags": [
+        "dance",
+        "lumina"
+      ],
+      "date": "2026-08-18",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 9158
+    },
+    {
+      "id": "kpop-003",
+      "category": "kpop",
+      "title": "Art of the Comeback Teaser",
+      "excerpt": "Why concept photos and cryptic clips send fans into detective mode.",
+      "body": "Why concept photos and cryptic clips send fans into detective mode.\n\nAcross the K-Pop community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? K-Pop is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "marketing",
+        "starlit"
+      ],
+      "date": "2026-07-18",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 2229
+    },
+    {
+      "id": "comics-001",
+      "category": "comics",
+      "title": "Webcomics Are the New Mainstream",
+      "excerpt": "Scroll-format comics are drawing millions of readers every week.",
+      "body": "Scroll-format comics are drawing millions of readers every week.\n\nAcross the Comics community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Comics is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "gallery",
+      "tags": [
+        "industry",
+        "iron-sparrow"
+      ],
+      "date": "2026-09-20",
+      "featured": true,
+      "trending": false,
+      "upcoming": false,
+      "popularity": 1896
+    },
+    {
+      "id": "comics-002",
+      "category": "comics",
+      "title": "The Evolution of the Superhero Costume",
+      "excerpt": "From spandex to tactical gear: how hero fashion reflects the times.",
+      "body": "From spandex to tactical gear: how hero fashion reflects the times.\n\nAcross the Comics community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Comics is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "design",
+        "the-ink-league"
+      ],
+      "date": "2026-08-20",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 9274
+    },
+    {
+      "id": "comics-003",
+      "category": "comics",
+      "title": "Indie Comic Creators to Follow",
+      "excerpt": "Five self-published artists doing wild, wonderful things with panels.",
+      "body": "Five self-published artists doing wild, wonderful things with panels.\n\nAcross the Comics community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Comics is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "audio",
+      "tags": [
+        "creators",
+        "paradox-patrol"
+      ],
+      "date": "2026-07-20",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 1328
+    },
+    {
+      "id": "manga-001",
+      "category": "manga",
+      "title": "Why Manga Sales Keep Breaking Records",
+      "excerpt": "Digital platforms and adaptations have turned readers into lifelong collectors.",
+      "body": "Digital platforms and adaptations have turned readers into lifelong collectors.\n\nAcross the Manga community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Manga is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "video",
+      "tags": [
+        "industry",
+        "crimson-petal"
+      ],
+      "date": "2026-09-22",
+      "featured": true,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 5446
+    },
+    {
+      "id": "manga-002",
+      "category": "manga",
+      "title": "A Beginner's Guide to Manga Genres",
+      "excerpt": "Shonen, shojo, seinen and josei — what they mean and where to start.",
+      "body": "Shonen, shojo, seinen and josei — what they mean and where to start.\n\nAcross the Manga community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Manga is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n{What makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "audio",
+      "tags": [
+        "guides",
+        "blade-of-seasons"
+      ],
+      "date": "2026-08-22",
+      "featured": false,
+      "trending": true,
+      "upcoming": false,
+      "popularity": 7928
+    },
+    {
+      "id": "manga-003",
+      "category": "manga",
+      "title": "The Craft of Screentone Art",
+      "excerpt": "Artists explain the dotted textures that give manga its signature look.",
+      "body": "Artists explain the dotted textures that give manga its signature look.\n\nAcross the Manga community, fans have been debating this topic for months. Conversations on forums, fan servers and at conventions show just how much passion drives this scene — and why FandomVerse exists to bring it together.\n\nOur editors spoke with long-time fans and newcomers alike. The consensus? Manga is evolving faster than ever, with fresh voices, new formats and an audience that spans every continent.\n\nWhat makes this moment special is accessibility. Where fans once had to hunt for imports and fan subs, today's releases are global from day one — and communities form around them instantly.\n\nWhether you're a veteran collector or just starting out, there has never been a better time to dive in. Bookmark this article, explore the character profiles in this hub, and check out upcoming events near you.",
+      "type": "article",
+      "tags": [
+        "art",
+        "ghost-ramen"
+      ],
+      "date": "2026-07-22",
+      "featured": false,
+      "trending": false,
+      "upcoming": true,
+      "popularity": 7724
+    }
+  ],
+  "characters": [
+    {
+      "id": "char-anime-001",
+      "category": "anime",
+      "name": "Akari Tenshou",
+      "series": "Neon Blade Chronicles",
+      "bio": "A rooftop courier who wields a light-forged katana to protect her district.",
+      "traits": [
+        "Brave",
+        "Reckless",
+        "Loyal"
+      ],
+      "popularity": 891,
+      "image": "assets/Akari Tenshou.jpg"
+    },
+    {
+      "id": "char-anime-002",
+      "category": "anime",
+      "name": "Ren Kurosawa",
+      "series": "Neon Blade Chronicles",
+      "bio": "A former corporate hacker searching for the truth behind his missing sister.",
+      "traits": [
+        "Brilliant",
+        "Guarded",
+        "Witty"
+      ],
+      "popularity": 1286,
+      "image": "assets/Ren Kurosawa.jpg"
+    },
+    {
+      "id": "char-anime-003",
+      "category": "anime",
+      "name": "Hikari Mori",
+      "series": "Skyward Academy",
+      "bio": "Top student of a floating academy who secretly fears heights.",
+      "traits": [
+        "Diligent",
+        "Kind",
+        "Anxious"
+      ],
+      "popularity": 8879,
+      "image": "assets/Hikari Mori.jpg"
+    },
+    {
+      "id": "char-anime-004",
+      "category": "anime",
+      "name": "Sora Kaze",
+      "series": "Skyward Academy",
+      "bio": "A wind-mage transfer student with a mysterious past.",
+      "traits": [
+        "Carefree",
+        "Powerful",
+        "Mysterious"
+      ],
+      "popularity": 1642,
+      "image": "assets/Sora Kaze.jpg"
+    },
+    {
+      "id": "char-anime-005",
+      "category": "anime",
+      "name": "Yuki Hanabira",
+      "series": "Spirit Lantern",
+      "bio": "A shrine keeper who can see and bargain with wandering spirits.",
+      "traits": [
+        "Gentle",
+        "Perceptive",
+        "Stubborn"
+      ],
+      "popularity": 6091,
+      "image": "assets/Yuki Hanabira.jpg"
+    },
+    {
+      "id": "char-gaming-001",
+      "category": "gaming",
+      "name": "Commander Vex Orin",
+      "series": "Starforge Odyssey",
+      "bio": "A starship captain navigating politics between rival galactic guilds.",
+      "traits": [
+        "Strategic",
+        "Stern",
+        "Honorable"
+      ],
+      "popularity": 714,
+      "image": "assets/Commander Vex Orin.jpg"
+    },
+    {
+      "id": "char-gaming-002",
+      "category": "gaming",
+      "name": "Nyx-7",
+      "series": "Starforge Odyssey",
+      "bio": "A sentient repair drone who dreams of writing poetry.",
+      "traits": [
+        "Curious",
+        "Loyal",
+        "Quirky"
+      ],
+      "popularity": 1508,
+      "image": "assets/Nyx-7.jpg"
+    },
+    {
+      "id": "char-gaming-003",
+      "category": "gaming",
+      "name": "Sir Bitsworth",
+      "series": "Pixel Knights",
+      "bio": "A tiny 8-bit knight with an oversized sword and a bigger heart.",
+      "traits": [
+        "Brave",
+        "Clumsy",
+        "Cheerful"
+      ],
+      "popularity": 7204,
+      "image": "assets/Sir Bitsworth.jpg"
+    },
+    {
+      "id": "char-gaming-004",
+      "category": "gaming",
+      "name": "Mira Voltage",
+      "series": "Void Runners",
+      "bio": "A parkour courier who races through collapsing dimensions.",
+      "traits": [
+        "Fast",
+        "Fearless",
+        "Rebellious"
+      ],
+      "popularity": 6951,
+      "image": "assets/Mira Voltage.jpg"
+    },
+    {
+      "id": "char-gaming-005",
+      "category": "gaming",
+      "name": "The Archivist",
+      "series": "Void Runners",
+      "bio": "An enigmatic guide who remembers every timeline.",
+      "traits": [
+        "Wise",
+        "Cryptic",
+        "Patient"
+      ],
+      "popularity": 1244,
+      "image": "assets/The Archivist.jpg"
+    },
+    {
+      "id": "char-movies-001",
+      "category": "movies",
+      "name": "Captain Elena Voss",
+      "series": "Echoes of Mars",
+      "bio": "The first commander of a Martian colony facing an impossible choice.",
+      "traits": [
+        "Resolute",
+        "Compassionate",
+        "Tactical"
+      ],
+      "popularity": 7055,
+      "image": "assets/Captain Elena Voss.jpg"
+    },
+    {
+      "id": "char-movies-002",
+      "category": "movies",
+      "name": "Dr. Theo Marsh",
+      "series": "Echoes of Mars",
+      "bio": "A botanist trying to grow life in red soil.",
+      "traits": [
+        "Hopeful",
+        "Nerdy",
+        "Resourceful"
+      ],
+      "popularity": 1068,
+      "image": "assets/Dr. Theo Marsh.jpg"
+    },
+    {
+      "id": "char-movies-003",
+      "category": "movies",
+      "name": "The Ringmaster",
+      "series": "Midnight Carnival",
+      "bio": "A charming showman who may not be entirely human.",
+      "traits": [
+        "Charismatic",
+        "Sinister",
+        "Theatrical"
+      ],
+      "popularity": 2128,
+      "image": "assets/The Ringmaster.jpg"
+    },
+    {
+      "id": "char-movies-004",
+      "category": "movies",
+      "name": "June Harlow",
+      "series": "Midnight Carnival",
+      "bio": "A teenager who sneaks into the carnival to find her brother.",
+      "traits": [
+        "Bold",
+        "Clever",
+        "Determined"
+      ],
+      "popularity": 3757,
+      "image": "assets/June Harlow.jpg"
+    },
+    {
+      "id": "char-movies-005",
+      "category": "movies",
+      "name": "Kai Navarro",
+      "series": "The Last Horizon",
+      "bio": "A pilot on the final flight before Earth's skies close.",
+      "traits": [
+        "Daring",
+        "Haunted",
+        "Loyal"
+      ],
+      "popularity": 1113,
+      "image": "assets/Kai Navarro.jpg"
+    },
+    {
+      "id": "char-tvshows-001",
+      "category": "tvshows",
+      "name": "Detective Mara Quinn",
+      "series": "Harbor Lights",
+      "bio": "A coastal detective unraveling a decades-old disappearance.",
+      "traits": [
+        "Sharp",
+        "Weary",
+        "Relentless"
+      ],
+      "popularity": 3722,
+      "image": "assets/Detective Mara Quinn.jpg"
+    },
+    {
+      "id": "char-tvshows-002",
+      "category": "tvshows",
+      "name": "Ollie Fenwick",
+      "series": "Harbor Lights",
+      "bio": "The lighthouse keeper who knows more than he says.",
+      "traits": [
+        "Secretive",
+        "Kind",
+        "Eccentric"
+      ],
+      "popularity": 863,
+      "image": "assets/Ollie Fenwick.jpg"
+    },
+    {
+      "id": "char-tvshows-003",
+      "category": "tvshows",
+      "name": "Queen Isolde",
+      "series": "The Quiet Kingdom",
+      "bio": "A young monarch ruling a realm where speaking aloud is forbidden.",
+      "traits": [
+        "Regal",
+        "Silent",
+        "Cunning"
+      ],
+      "popularity": 2281,
+      "image": "assets/Queen Isolde.jpg"
+    },
+    {
+      "id": "char-tvshows-004",
+      "category": "tvshows",
+      "name": "Bram the Scribe",
+      "series": "The Quiet Kingdom",
+      "bio": "A royal scribe whose written words carry magic.",
+      "traits": [
+        "Scholarly",
+        "Humble",
+        "Brave"
+      ],
+      "popularity": 4844,
+      "image": "assets/Bram the Scribe.jpg"
+    },
+    {
+      "id": "char-tvshows-005",
+      "category": "tvshows",
+      "name": "Dr. Nia Okafor",
+      "series": "Signal Lost",
+      "bio": "A radio astronomer who receives a message from the future.",
+      "traits": [
+        "Analytical",
+        "Driven",
+        "Empathetic"
+      ],
+      "popularity": 6967,
+      "image": "assets/Dr. Nia Okafor.jpg"
+    },
+    {
+      "id": "char-kpop-001",
+      "category": "kpop",
+      "name": "Jiwon",
+      "series": "NOVA9",
+      "bio": "Main vocalist known for effortless high notes and warm fan meets.",
+      "traits": [
+        "Vocal Powerhouse",
+        "Warm",
+        "Perfectionist"
+      ],
+      "popularity": 5154,
+      "image": "assets/Jiwon.jpg"
+    },
+    {
+      "id": "char-kpop-002",
+      "category": "kpop",
+      "name": "Taeyang Park",
+      "series": "NOVA9",
+      "bio": "Lead dancer and choreographer behind the group's signature moves.",
+      "traits": [
+        "Energetic",
+        "Creative",
+        "Funny"
+      ],
+      "popularity": 3061,
+      "image": "assets/Taeyang Park.jpg"
+    },
+    {
+      "id": "char-kpop-003",
+      "category": "kpop",
+      "name": "Seoah",
+      "series": "Lumina",
+      "bio": "Leader and rapper who writes most of Lumina's lyrics.",
+      "traits": [
+        "Poetic",
+        "Responsible",
+        "Fierce"
+      ],
+      "popularity": 1788,
+      "image": "assets/Seoah.jpg"
+    },
+    {
+      "id": "char-kpop-004",
+      "category": "kpop",
+      "name": "Hana Lee",
+      "series": "Lumina",
+      "bio": "The group's visual and ballad specialist.",
+      "traits": [
+        "Graceful",
+        "Shy",
+        "Talented"
+      ],
+      "popularity": 3178,
+      "image": "assets/Hana Lee.jpg"
+    },
+    {
+      "id": "char-kpop-005",
+      "category": "kpop",
+      "name": "Minho Kang",
+      "series": "STARLIT",
+      "bio": "Maknae with viral variety-show moments.",
+      "traits": [
+        "Playful",
+        "Charming",
+        "Hardworking"
+      ],
+      "popularity": 6201,
+      "image": "assets/Minho Kang.jpg"
+    },
+    {
+      "id": "char-comics-001",
+      "category": "comics",
+      "name": "Iron Sparrow",
+      "series": "Iron Sparrow",
+      "bio": "A mechanic who built wings from scrap to protect her city.",
+      "traits": [
+        "Inventive",
+        "Scrappy",
+        "Heroic"
+      ],
+      "popularity": 1076,
+      "image": "assets/Iron Sparrow.jpg"
+    },
+    {
+      "id": "char-comics-002",
+      "category": "comics",
+      "name": "Doctor Smudge",
+      "series": "The Ink League",
+      "bio": "A villain who can erase anything he draws around.",
+      "traits": [
+        "Cunning",
+        "Dramatic",
+        "Unpredictable"
+      ],
+      "popularity": 3474,
+      "image": "assets/Doctor Smudge.jpg"
+    },
+    {
+      "id": "char-comics-003",
+      "category": "comics",
+      "name": "Captain Quill",
+      "series": "The Ink League",
+      "bio": "Leader of a team whose powers come from living ink.",
+      "traits": [
+        "Inspiring",
+        "Bold",
+        "Fair"
+      ],
+      "popularity": 8233,
+      "image": "assets/Captain Quill.jpg"
+    },
+    {
+      "id": "char-comics-004",
+      "category": "comics",
+      "name": "Tick & Tock",
+      "series": "Paradox Patrol",
+      "bio": "Twin time-cops who keep arguing across centuries.",
+      "traits": [
+        "Bickering",
+        "Loyal",
+        "Clever"
+      ],
+      "popularity": 8811,
+      "image": "assets/Tick & Tock.jpg"
+    },
+    {
+      "id": "char-comics-005",
+      "category": "comics",
+      "name": "Echo Grey",
+      "series": "Paradox Patrol",
+      "bio": "A girl who exists in two timelines at once.",
+      "traits": [
+        "Enigmatic",
+        "Brave",
+        "Lonely"
+      ],
+      "popularity": 7105,
+      "image": "assets/Echo Grey.jpg"
+    },
+    {
+      "id": "char-manga-001",
+      "category": "manga",
+      "name": "Haru Akane",
+      "series": "Crimson Petal",
+      "bio": "A wandering swordsman carrying a red scarf from a promise long ago.",
+      "traits": [
+        "Stoic",
+        "Honorable",
+        "Gentle"
+      ],
+      "popularity": 6024,
+      "image": "assets/Haru Akane.jpg"
+    },
+    {
+      "id": "char-manga-002",
+      "category": "manga",
+      "name": "Tsubaki",
+      "series": "Crimson Petal",
+      "bio": "A fox spirit who follows Haru out of curiosity.",
+      "traits": [
+        "Mischievous",
+        "Loyal",
+        "Ancient"
+      ],
+      "popularity": 5011,
+      "image": "assets/Tsubaki.jpg"
+    },
+    {
+      "id": "char-manga-003",
+      "category": "manga",
+      "name": "Master Genji",
+      "series": "Blade of Seasons",
+      "bio": "A blind sword master who teaches through riddles.",
+      "traits": [
+        "Wise",
+        "Stern",
+        "Humorous"
+      ],
+      "popularity": 4170,
+      "image": "assets/Master Genji.jpg"
+    },
+    {
+      "id": "char-manga-004",
+      "category": "manga",
+      "name": "Mei Tanaka",
+      "series": "Ghost Ramen",
+      "bio": "A ramen chef whose customers are all ghosts.",
+      "traits": [
+        "Hardworking",
+        "Cheerful",
+        "Brave"
+      ],
+      "popularity": 3045,
+      "image": "assets/Mei Tanaka.jpg"
+    },
+    {
+      "id": "char-manga-005",
+      "category": "manga",
+      "name": "Old Man Kuro",
+      "series": "Ghost Ramen",
+      "bio": "A grumpy ghost critic who has rated ramen for 200 years.",
+      "traits": [
+        "Grumpy",
+        "Honest",
+        "Sentimental"
+      ],
+      "popularity": 4099,
+      "image": "assets/Old Man Kuro.jpg"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-anime-001",
+      "category": "anime",
+      "title": "NeoTokyo Anime Festival 2026",
+      "date": "2026-10-12",
+      "location": "Tokyo, Japan",
+      "description": "A celebration of Anime culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-anime-002",
+      "category": "anime",
+      "title": "Pacific Anime Expo",
+      "date": "2026-11-20",
+      "location": "Los Angeles, USA",
+      "description": "A celebration of Anime culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-anime-003",
+      "category": "anime",
+      "title": "Otaku Winter Summit",
+      "date": "2027-01-18",
+      "location": "Berlin, Germany",
+      "description": "A celebration of Anime culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-gaming-001",
+      "category": "gaming",
+      "title": "GameVerse Con 2026",
+      "date": "2026-10-28",
+      "location": "Seattle, USA",
+      "description": "A celebration of Gaming culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-gaming-002",
+      "category": "gaming",
+      "title": "Indie Pixel Showcase",
+      "date": "2026-12-05",
+      "location": "London, UK",
+      "description": "A celebration of Gaming culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-gaming-003",
+      "category": "gaming",
+      "title": "Esports World Clash",
+      "date": "2027-02-14",
+      "location": "Seoul, South Korea",
+      "description": "A celebration of Gaming culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-movies-001",
+      "category": "movies",
+      "title": "Silver Screen Film Festival",
+      "date": "2026-11-02",
+      "location": "Toronto, Canada",
+      "description": "A celebration of Movies culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-movies-002",
+      "category": "movies",
+      "title": "Midnight Premiere Marathon",
+      "date": "2026-12-18",
+      "location": "New York, USA",
+      "description": "A celebration of Movies culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-movies-003",
+      "category": "movies",
+      "title": "Global Indie Film Awards",
+      "date": "2027-03-08",
+      "location": "Cannes, France",
+      "description": "A celebration of Movies culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-tvshows-001",
+      "category": "tvshows",
+      "title": "StreamFest Live 2026",
+      "date": "2026-10-22",
+      "location": "Austin, USA",
+      "description": "A celebration of TV Shows culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-tvshows-002",
+      "category": "tvshows",
+      "title": "Harbor Lights Cast Panel",
+      "date": "2026-11-15",
+      "location": "Dublin, Ireland",
+      "description": "A celebration of TV Shows culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-tvshows-003",
+      "category": "tvshows",
+      "title": "TV Fan Awards Night",
+      "date": "2027-01-30",
+      "location": "Sydney, Australia",
+      "description": "A celebration of TV Shows culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-kpop-001",
+      "category": "kpop",
+      "title": "K-Wave Festival Seoul",
+      "date": "2026-10-17",
+      "location": "Seoul, South Korea",
+      "description": "A celebration of K-Pop culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-kpop-002",
+      "category": "kpop",
+      "title": "NOVA9 World Tour: Orbit",
+      "date": "2026-12-10",
+      "location": "Bangkok, Thailand",
+      "description": "A celebration of K-Pop culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-kpop-003",
+      "category": "kpop",
+      "title": "Lumina Fan Meeting",
+      "date": "2027-02-22",
+      "location": "Paris, France",
+      "description": "A celebration of K-Pop culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-comics-001",
+      "category": "comics",
+      "title": "Panel Pop Comic Con",
+      "date": "2026-11-07",
+      "location": "San Diego, USA",
+      "description": "A celebration of Comics culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-comics-002",
+      "category": "comics",
+      "title": "Ink & Ideas Artist Alley",
+      "date": "2026-12-12",
+      "location": "Montreal, Canada",
+      "description": "A celebration of Comics culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-comics-003",
+      "category": "comics",
+      "title": "Webcomic Creators Summit",
+      "date": "2027-03-20",
+      "location": "Lisbon, Portugal",
+      "description": "A celebration of Comics culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-manga-001",
+      "category": "manga",
+      "title": "Manga Market Osaka",
+      "date": "2026-10-25",
+      "location": "Osaka, Japan",
+      "description": "A celebration of Manga culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-manga-002",
+      "category": "manga",
+      "title": "Crimson Petal Launch Party",
+      "date": "2026-11-28",
+      "location": "Singapore",
+      "description": "A celebration of Manga culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    },
+    {
+      "id": "event-manga-003",
+      "category": "manga",
+      "title": "International Manga Awards",
+      "date": "2027-02-05",
+      "location": "Paris, France",
+      "description": "A celebration of Manga culture featuring panels, exclusive reveals, cosplay contests and fan meetups."
+    }
+  ],
+  "media": [
+    {
+      "id": "media-anime-001",
+      "category": "anime",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Neon Blade Chronicles — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-anime-002",
+      "category": "anime",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Skyward Academy — Launch Trailer",
+      "url": "https://www.youtube-nocookie.com/embed/eRsGyueVLvQ",
+      "releaseStatus": "recent",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "media-anime-003",
+      "category": "anime",
+      "type": "video",
+      "subtype": "interview",
+      "title": "Creators of Neon Blade Chronicles — Interview",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-07-20"
+    },
+    {
+      "id": "media-anime-004",
+      "category": "anime",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: Anime Weekly",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-anime-100",
+      "category": "anime",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Anime Gallery #1",
+      "image": "anime",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-anime-101",
+      "category": "anime",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Anime Gallery #2",
+      "image": "anime",
+      "hue": 45,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-gaming-001",
+      "category": "gaming",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Starforge Odyssey — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/eRsGyueVLvQ",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-gaming-002",
+      "category": "gaming",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Pixel Knights — Launch Trailer",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "media-movies-001",
+      "category": "movies",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "The Last Horizon — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-movies-002",
+      "category": "movies",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Midnight Carnival — Launch Trailer",
+      "url": "https://www.youtube-nocookie.com/embed/WhWc3b3KhnY",
+      "releaseStatus": "recent",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "media-tvshows-001",
+      "category": "tvshows",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Harbor Lights — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/WhWc3b3KhnY",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-kpop-001",
+      "category": "kpop",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "NOVA9 — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/Y-rmzh0PI3c",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-comics-001",
+      "category": "comics",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Iron Sparrow — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-manga-001",
+      "category": "manga",
+      "type": "video",
+      "subtype": "trailer",
+      "title": "Crimson Petal — Official Teaser",
+      "url": "https://www.youtube-nocookie.com/embed/eRsGyueVLvQ",
+      "releaseStatus": "upcoming",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "media-gaming-interview-001",
+      "category": "gaming",
+      "type": "video",
+      "subtype": "interview",
+      "title": "Gaming Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind Gaming.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-gaming-podcast-001",
+      "category": "gaming",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: Gaming Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the Gaming community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-gaming-gallery-001",
+      "category": "gaming",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Gaming Fan Gallery",
+      "description": "A curated visual collection for the Gaming fandom.",
+      "image": "gaming",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-movies-interview-001",
+      "category": "movies",
+      "type": "video",
+      "subtype": "interview",
+      "title": "Movies Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind Movies.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-movies-podcast-001",
+      "category": "movies",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: Movies Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the Movies community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-movies-gallery-001",
+      "category": "movies",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Movies Fan Gallery",
+      "description": "A curated visual collection for the Movies fandom.",
+      "image": "movies",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-tvshows-interview-001",
+      "category": "tvshows",
+      "type": "video",
+      "subtype": "interview",
+      "title": "TV Shows Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind TV Shows.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-tvshows-podcast-001",
+      "category": "tvshows",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: TV Shows Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the TV Shows community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-tvshows-gallery-001",
+      "category": "tvshows",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "TV Shows Fan Gallery",
+      "description": "A curated visual collection for the TV Shows fandom.",
+      "image": "tvshows",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-kpop-interview-001",
+      "category": "kpop",
+      "type": "video",
+      "subtype": "interview",
+      "title": "K-Pop Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind K-Pop.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-kpop-podcast-001",
+      "category": "kpop",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: K-Pop Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the K-Pop community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-kpop-gallery-001",
+      "category": "kpop",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "K-Pop Fan Gallery",
+      "description": "A curated visual collection for the K-Pop fandom.",
+      "image": "kpop",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-comics-interview-001",
+      "category": "comics",
+      "type": "video",
+      "subtype": "interview",
+      "title": "Comics Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind Comics.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-comics-podcast-001",
+      "category": "comics",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: Comics Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the Comics community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-comics-gallery-001",
+      "category": "comics",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Comics Fan Gallery",
+      "description": "A curated visual collection for the Comics fandom.",
+      "image": "comics",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-manga-interview-001",
+      "category": "manga",
+      "type": "video",
+      "subtype": "interview",
+      "title": "Manga Creators — Fan Interview",
+      "description": "A community conversation about the stories, craft, and people behind Manga.",
+      "url": "https://www.youtube-nocookie.com/embed/R6MlUcmOul8",
+      "releaseStatus": "recent",
+      "date": "2026-08-20"
+    },
+    {
+      "id": "media-manga-podcast-001",
+      "category": "manga",
+      "type": "audio",
+      "subtype": "podcast",
+      "title": "FandomVerse Podcast: Manga Weekly",
+      "description": "Weekly fan conversations, recommendations, and news from the Manga community.",
+      "url": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "media-manga-gallery-001",
+      "category": "manga",
+      "type": "image",
+      "subtype": "gallery",
+      "title": "Manga Fan Gallery",
+      "description": "A curated visual collection for the Manga fandom.",
+      "image": "manga",
+      "hue": 0,
+      "releaseStatus": "recent",
+      "date": "2026-09-01"
+    }
+  ],
+  "merchandise": [
+    {
+      "id": "merch-anime-001",
+      "category": "anime",
+      "name": "Neon Blade Glow Hoodie",
+      "image": "assets/neon-hoodie.jpg",
+      "priceRange": "$35 - $50",
+      "price": 35,
+      "description": "Fan-designed Anime collectible inspired by Neon Blade Chronicles. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-anime-002",
+      "category": "anime",
+      "name": "Skyward Academy Enamel Pin Set",
+      "image": "assets/Skyward Academy Enamel Pin Set.jpg",
+      "priceRange": "$12 - $18",
+      "price": 12,
+      "description": "Fan-designed Anime collectible inspired by Skyward Academy. Original artwork, premium quality.",
+      "featured": false
+    },
+    {
+      "id": "merch-anime-003",
+      "category": "anime",
+      "name": "Spirit Lantern Desk Lamp",
+      "image": "assets/Spirit Lantern Desk Lamp.jpg",
+      "priceRange": "$40 - $65",
+      "price": 40,
+      "description": "Fan-designed Anime collectible inspired by Spirit Lantern. Original artwork, premium quality.",
+      "featured": false
+    },
+    {
+      "id": "merch-gaming-001",
+      "category": "gaming",
+      "name": "Starforge RGB Controller Skin",
+      "image": "assets/Starforge RGB Controller Skin.jpg",
+      "priceRange": "$15 - $25",
+      "price": 15,
+      "description": "Fan-designed Gaming collectible inspired by Starforge Odyssey. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-gaming-002",
+      "category": "gaming",
+      "name": "Pixel Knights Plush",
+      "image": "assets/Pixel Knights Plush.jpg",
+      "priceRange": "$20 - $30",
+      "price": 20,
+      "description": "Fan-designed Gaming collectible inspired by Pixel Knights. Original artwork, premium quality.",
+      "featured": false
+    },
+    {
+      "id": "merch-movies-001",
+      "category": "movies",
+      "name": "Echoes of Mars Poster Print",
+      "image": "assets/Echoes of Mars Poster Print.jpg",
+      "priceRange": "$18 - $30",
+      "price": 18,
+      "description": "Fan-designed Movies collectible inspired by The Last Horizon. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-tvshows-001",
+      "category": "tvshows",
+      "name": "Harbor Lights Lighthouse Mug",
+      "image": "assets/Harbor Lights Lighthouse Mug.jpg",
+      "priceRange": "$14 - $20",
+      "price": 14,
+      "description": "Fan-designed TV Shows collectible inspired by Harbor Lights. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-kpop-001",
+      "category": "kpop",
+      "name": "NOVA9 Official-Style Lightstick",
+      "image": "assets/NOVA9 Official-Style Lightstick.jpg",
+      "priceRange": "$45 - $60",
+      "price": 45,
+      "description": "Fan-designed K-Pop collectible inspired by NOVA9. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-comics-001",
+      "category": "comics",
+      "name": "Iron Sparrow Wing Keychain",
+      "image": "assets/Iron Sparrow Wing Keychain.jpg",
+      "priceRange": "$8 - $12",
+      "price": 8,
+      "description": "Fan-designed Comics collectible inspired by Iron Sparrow. Original artwork, premium quality.",
+      "featured": true
+    },
+    {
+      "id": "merch-manga-001",
+      "category": "manga",
+      "name": "Crimson Petal Scarf",
+      "image": "assets/Crimson Petal Scarf.jpg",
+      "priceRange": "$22 - $35",
+      "price": 22,
+      "description": "Fan-designed Manga collectible inspired by Crimson Petal. Original artwork, premium quality.",
+      "featured": true
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-anime",
+      "keywords": [
+        "anime",
+        "neon blade",
+        "skyward",
+        "spirit lantern",
+        "otaku"
+      ],
+      "answer": "✨ Check out our dedicated Anime Hub for articles on Neon Blade Chronicles, character lore, and upcoming anime expos!",
+      "link": "category.html?slug=anime"
+    },
+    {
+      "id": "faq-gaming",
+      "keywords": [
+        "gaming",
+        "game",
+        "games",
+        "starforge",
+        "pixel knights",
+        "void runners",
+        "esports"
+      ],
+      "answer": "🎮 Step into our Gaming Hub for indie games coverage, Starforge Odyssey guides, and cloud gaming trends!",
+      "link": "category.html?slug=gaming"
+    },
+    {
+      "id": "faq-movies",
+      "keywords": [
+        "movies",
+        "movie",
+        "film",
+        "cinema",
+        "the last horizon",
+        "midnight carnival",
+        "mars"
+      ],
+      "answer": "🎬 Explore our Movies Hub for practical effects breakthroughs, sci-fi blockbusters, and director interviews!",
+      "link": "category.html?slug=movies"
+    },
+    {
+      "id": "faq-tvshows",
+      "keywords": [
+        "tvshows",
+        "tv",
+        "show",
+        "series",
+        "harbor lights",
+        "quiet kingdom",
+        "signal lost"
+      ],
+      "answer": "📺 Jump to our TV Shows Hub to read about binge culture, limited series, and behind-the-scenes mystery thrillers!",
+      "link": "category.html?slug=tvshows"
+    },
+    {
+      "id": "faq-kpop",
+      "keywords": [
+        "kpop",
+        "k-pop",
+        "nova9",
+        "lumina",
+        "starlit",
+        "idol",
+        "lightstick",
+        "comeback"
+      ],
+      "answer": "🎵 Head to our K-Pop Hub for fandom breakdowns, dance challenge breakdowns, and comeback teasers!",
+      "link": "category.html?slug=kpop"
+    },
+    {
+      "id": "faq-comics",
+      "keywords": [
+        "comics",
+        "comic",
+        "webcomic",
+        "iron sparrow",
+        "ink league",
+        "paradox",
+        "hero"
+      ],
+      "answer": "📖 Visit our Comics Hub to discover scroll webcomics, superhero costume evolution, and indie creators!",
+      "link": "category.html?slug=comics"
+    },
+    {
+      "id": "faq-manga",
+      "keywords": [
+        "manga",
+        "crimson petal",
+        "blade of seasons",
+        "ghost ramen",
+        "shonen",
+        "shojo"
+      ],
+      "answer": "📜 Dive into our Manga Hub for record sales analysis, genre beginner guides, and screentone art tutorials!",
+      "link": "category.html?slug=manga"
+    },
+    {
+      "id": "faq-trailer",
+      "keywords": [
+        "trailer",
+        "trailers",
+        "video",
+        "watch",
+        "teaser",
+        "podcast",
+        "audio"
+      ],
+      "answer": "🍿 All video teasers, gameplay trailers, podcasts, and photo galleries are collected in the Trailers Hub!",
+      "link": "trailers.html"
+    },
+    {
+      "id": "faq-merch",
+      "keywords": [
+        "merch",
+        "buy",
+        "shop",
+        "store",
+        "cart",
+        "price",
+        "hoodie",
+        "pin",
+        "lamp",
+        "mug"
+      ],
+      "answer": "🛍️ Browse fan apparel, enamel pins, desk lamps, and lightsticks in the Store. Your cart totals update live!",
+      "link": "merch.html"
+    },
+    {
+      "id": "faq-events",
+      "keywords": [
+        "event",
+        "events",
+        "convention",
+        "con",
+        "festival",
+        "expo",
+        "tokyo",
+        "seattle",
+        "seoul"
+      ],
+      "answer": "📅 Check the Events Hub for dates, locations, and schedules of upcoming anime expos, gaming cons, and film festivals!",
+      "link": "events.html"
+    },
+    {
+      "id": "faq-bookmark",
+      "keywords": [
+        "bookmark",
+        "save",
+        "favorite",
+        "favourite",
+        "saved"
+      ],
+      "answer": "❤️ Tap the heart icon on any card to save it instantly to your Bookmarks page (saved in your browser)!",
+      "link": "bookmarks.html"
+    },
+    {
+      "id": "faq-contact",
+      "keywords": [
+        "contact",
+        "email",
+        "support",
+        "help",
+        "reach",
+        "feedback"
+      ],
+      "answer": "📩 Need to talk to us? Reach out directly via our Contact page or join our Discord server!",
+      "link": "contact.html"
+    },
+    {
+      "id": "faq-about",
+      "keywords": [
+        "about",
+        "who",
+        "team",
+        "fandomverse",
+        "what is this",
+        "platform"
+      ],
+      "answer": "ℹ️ FandomVerse is a lightweight, fan-made portal uniting seven major fandoms in one seamless hub. Read more on our About page!",
+      "link": "about.html"
+    },
+    {
+      "id": "faq-trending",
+      "keywords": [
+        "trending",
+        "hot",
+        "popular",
+        "top",
+        "viral"
+      ],
+      "answer": "🔥 Check out the top trending articles and most popular characters right on our Homepage!",
+      "link": "index.html"
+    },
+    {
+      "id": "faq-login",
+      "keywords": [
+        "login",
+        "sign up",
+        "signup",
+        "account",
+        "register",
+        "password"
+      ],
+      "answer": "🔐 Login and Sign-Up are demo features — no backend account creation required to explore!",
+      "link": null
+    },
+    {
+      "id": "faq-hello",
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "yo",
+        "greeting",
+        "bot",
+        "verse bot"
+      ],
+      "answer": "👋 Hey fan! I'm Verse Bot 👾 — your automated rule-based fandom guide. Ask me about any category, trailers, merch, or events!",
+      "link": null
+    }
+  ],
+  "about": {
+    "eyebrow": "About FandomVerse",
+    "title": "One home for every fandom.",
+    "intro": "FandomVerse brings anime, gaming, movies, TV, K-Pop, comics, and manga into one fan-first place to explore stories, characters, media, events, and collectibles.",
+    "mission": "Make it easier for fans to discover new stories, revisit the worlds they love, and find the people and moments that make each fandom special.",
+    "website": [
+      {
+        "icon": "🗂️",
+        "title": "Seven fandom hubs",
+        "description": "Browse category-specific articles, character profiles, galleries, trailers, podcasts, events, and merchandise."
+      },
+      {
+        "icon": "✨",
+        "title": "A fan-first experience",
+        "description": "Save favorites, add session-only notes, explore curated search results, and switch between dark and light themes."
+      },
+      {
+        "icon": "🤖",
+        "title": "Verse Assistant",
+        "description": "Get quick answers from a local, rule-based FAQ bot—no live AI service or account is needed."
+      },
+      {
+        "icon": "🔒",
+        "title": "Local-first demo",
+        "description": "The catalogue is pre-populated JSON. Favorites stay in your browser, notes are session-only, and sign-in and checkout are demo interfaces."
+      }
+    ],
+    "team": [
+      {
+        "icon": "✍️",
+        "role": "Editorial & Research",
+        "description": "Organizes the pre-populated stories, character profiles, and fandom facts so each hub is easy to explore."
+      },
+      {
+        "icon": "🎟️",
+        "role": "Community & Events",
+        "description": "Highlights conventions, fan gatherings, releases, and community moments across all seven categories."
+      },
+      {
+        "icon": "🎨",
+        "role": "Product & Design",
+        "description": "Shapes the responsive experience, accessible interactions, and visual system that brings the content together."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Talk to the FandomVerse team.",
+    "intro": "Choose a team area for your enquiry. All departments currently route through our shared demo inbox.",
+    "email": "contact@fandomverse-demo.com",
+    "teams": [
+      {
+        "icon": "✍️",
+        "name": "Editorial & Research",
+        "description": "Article ideas, corrections, character profiles, and fandom coverage.",
+        "subject": "Editorial enquiry"
+      },
+      {
+        "icon": "🎟️",
+        "name": "Community & Events",
+        "description": "Conventions, event listings, partnerships, and community feedback.",
+        "subject": "Community and events enquiry"
+      },
+      {
+        "icon": "🎨",
+        "name": "Product & Design",
+        "description": "Website feedback, accessibility, and ideas for improving the experience.",
+        "subject": "Website feedback"
+      }
+    ],
+    "map": {
+      "label": "Tokyo, Japan · demo map center",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "zoom": 12,
+      "note": "FandomVerse is a demo project and does not publish a verified office address. The map opens at a Tokyo community hub as a preview; use GPS to center it on your current location."
+    }
+  }
+}

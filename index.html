@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FandomVerse — Portal for Fandom World</title>
+  <meta name="description" content="Your hub for anime, gaming, movies, TV shows, K-Pop, comics and manga: trending articles, characters, trailers, events and merch.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-top">
+      <a href="index.html" class="logo">
+        <span class="logo-badge bg-neon">F</span>
+        <span class="logo-text">Fandom<span class="text-neon">Verse</span></span>
+      </a>
+
+      <button class="nav-menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobile-nav-drawer" aria-expanded="false" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <form class="search-box" onsubmit="handleGlobalSearch(event)">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <defs>
+              <linearGradient id="search-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--primary)" />
+                <stop offset="55%" stop-color="var(--ring)" />
+                <stop offset="100%" stop-color="var(--accent)" />
+              </linearGradient>
+            </defs>
+            <circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="url(#search-icon-gradient)" stroke-width="2.2" />
+            <path d="m16 16 4.2 4.2" fill="none" stroke="url(#search-icon-gradient)" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <input type="search" id="search-query-input" class="search-input" placeholder="Search every fandom…" aria-label="Search FandomVerse">
+      </form>
+
+      <nav class="nav-links">
+        <a href="trailers.html" class="nav-link">Trailers</a>
+        <a href="merch.html" class="nav-link">Store</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="bookmarks.html" class="icon-btn" aria-label="Bookmarks">
+          <span>❤️</span>
+          <span id="bookmark-badge" class="badge">0</span>
+        </a>
+        <button onclick="openCart()" class="icon-btn" aria-label="Shopping Cart">
+          <span>🛒</span>
+          <span id="cart-badge" class="badge badge-accent">0</span>
+        </button>
+        <button onclick="toggleTheme()" class="icon-btn" aria-label="Toggle theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <button onclick="openAuth('login')" class="btn-login">Log in</button>
+        <button onclick="openAuth('signup')" class="btn-signup bg-neon">Sign up</button>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="category-breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a class="breadcrumb-link" href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li><a class="breadcrumb-link" href="index.html#home-categories">Fandom hubs</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li class="breadcrumb-current-item">
+              <details class="breadcrumb-picker" id="category-breadcrumb-picker">
+                <summary id="category-breadcrumb-current">All Categories <span aria-hidden="true">›</span></summary>
+                <div class="breadcrumb-menu" aria-label="Choose a category">
+                  <a href="category.html?slug=anime" data-category-link="anime">✨ <span>Anime</span></a>
+                  <a href="category.html?slug=gaming" data-category-link="gaming">🎮 <span>Gaming</span></a>
+                  <a href="category.html?slug=movies" data-category-link="movies">🎬 <span>Movies</span></a>
+                  <a href="category.html?slug=tvshows" data-category-link="tvshows">📺 <span>TV Shows</span></a>
+                  <a href="category.html?slug=kpop" data-category-link="kpop">🎵 <span>K-Pop</span></a>
+                  <a href="category.html?slug=comics" data-category-link="comics">📖 <span>Comics</span></a>
+                  <a href="category.html?slug=manga" data-category-link="manga">📜 <span>Manga</span></a>
+                </div>
+              </details>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <button class="mobile-nav-backdrop" type="button" aria-label="Close navigation menu" tabindex="-1" onclick="closeMobileNav()"></button>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile navigation" aria-hidden="true" inert>
+    <div class="mobile-nav-drawer-head">
+      <span class="mobile-nav-drawer-title">Explore FandomVerse</span>
+      <button class="mobile-nav-close" type="button" aria-label="Close navigation menu" onclick="closeMobileNav()">✕</button>
+    </div>
+    <div class="mobile-nav-content"></div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="spa-page" id="page-index" data-page="index" hidden>
+<main style="flex:1;">
+    <section style="position:relative;overflow:hidden;padding:5rem 0;background-image:linear-gradient(to bottom, rgba(15,15,25,0.4), var(--background)), url('assets/hero.jpg');background-size:cover;background-position:center;">
+      <div class="container grid-2" style="align-items:center;">
+        <div>
+          <span style="display:inline-flex;align-items:center;gap:0.5rem;border-radius:9999px;border:1px solid var(--border);background:color-mix(in oklab, var(--background) 70%, transparent);padding:0.375rem 0.875rem;font-size:0.75rem;font-weight:700;backdrop-filter:blur(4px);">
+            🚀 Portal for Fandom World
+          </span>
+          <h1 style="font-size:3rem;font-weight:900;line-height:1.1;margin-top:1.25rem;">
+            Every fandom.<br><span class="text-neon">One universe.</span>
+          </h1>
+          <p style="margin-top:1.25rem;font-size:1.125rem;color:var(--muted-foreground);max-width:32rem;">
+            Dive into stories, characters, trailers, events and merch across anime, gaming, movies, TV, K-Pop, comics and manga.
+          </p>
+          <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:0.75rem;">
+            <a href="category.html?slug=anime" class="bg-neon" style="display:inline-flex;align-items:center;gap:0.5rem;border-radius:var(--radius-xl);padding:0.875rem 1.75rem;font-weight:700;color:var(--primary-foreground);box-shadow:var(--shadow-glow);">
+              Start exploring →
+            </a>
+            <a href="trailers.html" style="display:inline-flex;align-items:center;gap:0.5rem;border-radius:var(--radius-xl);border:1px solid var(--border);background:color-mix(in oklab, var(--background) 60%, transparent);padding:0.875rem 1.75rem;font-weight:700;backdrop-filter:blur(4px);">
+              Watch trailers
+            </a>
+          </div>
+        </div>
+
+        <div id="hero-carousel-container" style="position:relative;">
+          <!-- Carousel Slide JavaScript Injected -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fandom Hubs -->
+    <section class="container" id="home-categories" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Choose your world</span>
+          <h2 class="section-title">Fandom Hubs</h2>
+        </div>
+      </div>
+      <div class="grid-7" id="home-category-grid"></div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="container" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Hot this week</span>
+          <h2 class="section-title">Trending Now 🔥</h2>
+        </div>
+      </div>
+      <div class="grid-4" id="home-trending-container"></div>
+    </section>
+
+    <!-- Upcoming Releases -->
+    <section class="container" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Coming soon</span>
+          <h2 class="section-title">Upcoming Releases</h2>
+        </div>
+        <a href="trailers.html" style="font-size:0.875rem;font-weight:700;color:var(--primary);">All trailers →</a>
+      </div>
+      <div style="display:flex;gap:1rem;overflow-x:auto;padding-bottom:0.5rem;" id="home-trailers-container"></div>
+    </section>
+
+    <!-- Popular Characters -->
+    <section class="container" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Fan favorites</span>
+          <h2 class="section-title">Popular Characters</h2>
+        </div>
+      </div>
+      <div class="grid-4" id="home-characters-container"></div>
+    </section>
+
+    <!-- Event Highlights -->
+    <section class="container" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Save the date</span>
+          <h2 class="section-title">Event Highlights</h2>
+        </div>
+        <a href="events.html" style="font-size:0.875rem;font-weight:700;color:var(--primary);">All events →</a>
+      </div>
+      <div class="grid-2" id="home-events-container"></div>
+    </section>
+
+    <!-- Featured Merch -->
+    <section class="container" style="margin-top:4rem;">
+      <div class="section-header">
+        <div>
+          <span class="kicker">Gear up</span>
+          <h2 class="section-title">Featured Merch</h2>
+        </div>
+        <a href="merch.html" style="font-size:0.875rem;font-weight:700;color:var(--primary);">Visit store →</a>
+      </div>
+      <div class="grid-4" id="home-merch-container"></div>
+    </section>
+  </main>
+</section>
+<section class="spa-page" id="page-category" data-page="category" hidden>
+<main style="flex:1;">
+    <!-- Category Hero -->
+    <section id="cat-hero" style="position:relative;padding:5rem 0;background-size:cover;background-position:center;border-bottom:1px solid var(--border);">
+      <div class="container" style="position:relative;z-index:2;">
+        <span class="kicker">Fandom Hub</span>
+        <h1 id="cat-title" style="font-size:3rem;font-weight:900;margin-top:0.5rem;">Category</h1>
+        <p id="cat-tagline" style="font-size:1.25rem;color:var(--muted-foreground);margin-top:0.5rem;max-width:36rem;"></p>
+      </div>
+    </section>
+
+    <!-- Fandom Content -->
+    <div class="container" style="margin-top:4rem;display:flex;flex-direction:column;gap:4rem;">
+      <!-- Category Articles -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Latest Articles</h2>
+        </div>
+        <div class="grid-3" id="cat-articles-grid"></div>
+      </section>
+
+      <!-- Category Characters -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Famous Characters</h2>
+        </div>
+        <div class="grid-4" id="cat-characters-grid"></div>
+      </section>
+
+      <!-- Category Media Gallery, trailers, interviews, and podcasts -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Videos, Audio & Gallery</h2>
+        </div>
+        <div class="grid-3" id="cat-media-grid"></div>
+      </section>
+
+      <!-- Category Events -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Event Highlights</h2>
+        </div>
+        <div class="grid-2" id="cat-events-grid"></div>
+      </section>
+
+      <!-- Category Merch -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Merch & Collectibles</h2>
+        </div>
+        <div class="grid-4" id="cat-merch-grid"></div>
+      </section>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-article" data-page="article" hidden>
+<main style="flex:1;padding:3rem 0;">
+    <div class="container" style="max-width:52rem;">
+
+      <!-- Breadcrumbs -->
+      <nav id="breadcrumbs" style="display:flex;align-items:center;gap:0.5rem;font-size:0.875rem;color:var(--muted-foreground);margin-bottom:1.5rem;">
+        <a href="index.html" style="color:inherit;">Home</a>
+        <span>›</span>
+        <span id="bc-cat">Category</span>
+        <span>›</span>
+        <span id="bc-title" style="color:var(--foreground);">Article</span>
+      </nav>
+
+      <div id="article-main-container"></div>
+
+      <!-- Related Articles -->
+      <section style="margin-top:5rem;">
+        <h2 style="font-size:1.5rem;font-weight:800;margin-bottom:1.5rem;">Related Articles</h2>
+        <div class="grid-3" id="related-articles-container"></div>
+      </section>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-search" data-page="search" hidden>
+<main style="flex:1;padding:4rem 0;">
+    <div class="container">
+      <span class="kicker">Search Results</span>
+      <h1 id="search-title" style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;">Results for ""</h1>
+      <p id="search-meta" style="font-size:1.125rem;color:var(--muted-foreground);margin-top:0.5rem;"></p>
+
+      <div class="grid-3" style="margin-top:3rem;" id="search-results-grid"></div>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-trailers" data-page="trailers" hidden>
+<main style="flex:1;padding:4rem 0;">
+    <div class="container">
+      <span class="kicker">Watch & Listen</span>
+      <h1 style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;">Trailers & Media Hub</h1>
+      <p style="font-size:1.125rem;color:var(--muted-foreground);margin-top:0.5rem;max-width:36rem;">
+        Official teasers, gameplay reveals, cast interviews, and podcasts across all seven fandoms.
+      </p>
+
+      <!-- Filter Controls -->
+      <div style="margin-top:2rem;display:flex;gap:0.5rem;overflow-x:auto;padding-bottom:0.5rem;" id="trailers-filter-bar">
+        <button onclick="filterTrailers('all')" class="cat-pill active" id="trail-all">All Media</button>
+        <button onclick="filterTrailers('video')" class="cat-pill" id="trail-video">🎥 Video Trailers</button>
+        <button onclick="filterTrailers('audio')" class="cat-pill" id="trail-audio">🎧 Podcasts</button>
+        <button onclick="filterTrailers('image')" class="cat-pill" id="trail-image">🖼️ Gallery</button>
+      </div>
+
+      <div class="grid-3" style="margin-top:2.5rem;" id="trailers-grid-container"></div>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-merch" data-page="merch" hidden>
+<main style="flex:1;padding:4rem 0;">
+    <div class="container">
+      <span class="kicker">Gear Up</span>
+      <h1 style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;">Fan Merchandise Store</h1>
+      <p style="font-size:1.125rem;color:var(--muted-foreground);margin-top:0.5rem;max-width:36rem;">
+        Apparel, collectibles, pins, art prints, and lightsticks inspired by your favorite fandoms.
+      </p>
+
+      <!-- Store Controls -->
+      <div style="margin-top:2rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;">
+        <div style="display:flex;gap:0.5rem;overflow-x:auto;padding-bottom:0.25rem;" id="merch-filter-bar">
+          <button onclick="filterMerch('all')" class="cat-pill active" id="merch-all">All Products</button>
+          <button onclick="filterMerch('anime')" class="cat-pill" id="merch-anime">✨ Anime</button>
+          <button onclick="filterMerch('gaming')" class="cat-pill" id="merch-gaming">🎮 Gaming</button>
+          <button onclick="filterMerch('movies')" class="cat-pill" id="merch-movies">🎬 Movies</button>
+          <button onclick="filterMerch('tvshows')" class="cat-pill" id="merch-tvshows">📺 TV Shows</button>
+          <button onclick="filterMerch('kpop')" class="cat-pill" id="merch-kpop">🎵 K-Pop</button>
+          <button onclick="filterMerch('comics')" class="cat-pill" id="merch-comics">📖 Comics</button>
+          <button onclick="filterMerch('manga')" class="cat-pill" id="merch-manga">📜 Manga</button>
+        </div>
+
+        <input type="text" id="merch-search" oninput="renderPageContent()" class="form-input" placeholder="Filter store items..." style="width:16rem;height:2.5rem;" />
+      </div>
+
+      <div class="grid-4" style="margin-top:2.5rem;" id="merch-grid-container"></div>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-events" data-page="events" hidden>
+<main style="flex:1;padding:4rem 0;">
+    <div class="container">
+      <span class="kicker">Save The Date</span>
+      <h1 style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;">Global Events & Conventions</h1>
+      <p style="font-size:1.125rem;color:var(--muted-foreground);margin-top:0.5rem;max-width:36rem;">
+        Discover upcoming fan expos, tournaments, premieres, and concert dates across the globe.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div style="margin-top:2rem;display:flex;gap:0.5rem;overflow-x:auto;padding-bottom:0.5rem;" id="events-filter-bar">
+        <button onclick="filterEvents('all')" class="cat-pill active" id="filter-all">All Events</button>
+        <button onclick="filterEvents('anime')" class="cat-pill" id="filter-anime">✨ Anime</button>
+        <button onclick="filterEvents('gaming')" class="cat-pill" id="filter-gaming">🎮 Gaming</button>
+        <button onclick="filterEvents('movies')" class="cat-pill" id="filter-movies">🎬 Movies</button>
+        <button onclick="filterEvents('tvshows')" class="cat-pill" id="filter-tvshows">📺 TV Shows</button>
+        <button onclick="filterEvents('kpop')" class="cat-pill" id="filter-kpop">🎵 K-Pop</button>
+        <button onclick="filterEvents('comics')" class="cat-pill" id="filter-comics">📖 Comics</button>
+        <button onclick="filterEvents('manga')" class="cat-pill" id="filter-manga">📜 Manga</button>
+      </div>
+
+      <div class="grid-2" style="margin-top:2.5rem;" id="events-grid-container"></div>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-bookmarks" data-page="bookmarks" hidden>
+<main style="flex:1;padding:4rem 0;">
+    <div class="container">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+        <div>
+          <span class="kicker">Personal Collection</span>
+          <h1 style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;">My Bookmarks ❤️</h1>
+          <p style="font-size:1.125rem;color:var(--muted-foreground);margin-top:0.5rem;">
+            Items you have bookmarked are saved right here in your browser.
+          </p>
+        </div>
+        <div class="bookmarks-actions">
+          <button onclick="exportBookmarks()" class="btn-secondary bookmarks-export">Export List</button>
+          <button onclick="clearAllBookmarks()" class="btn-secondary bookmarks-clear">Clear All Bookmarks</button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs Bar for Bookmarks -->
+      <div style="margin-top:2rem;display:flex;gap:0.5rem;overflow-x:auto;padding-bottom:0.5rem;" id="bookmarks-filter-bar">
+        <button onclick="filterBookmarks('all')" class="cat-pill active" id="bm-filter-all">All Cards</button>
+        <button onclick="filterBookmarks('Article')" class="cat-pill" id="bm-filter-Article">📰 Articles</button>
+        <button onclick="filterBookmarks('Character')" class="cat-pill" id="bm-filter-Character">👤 Characters</button>
+        <button onclick="filterBookmarks('Media')" class="cat-pill" id="bm-filter-Media">🎬 Media</button>
+        <button onclick="filterBookmarks('Event')" class="cat-pill" id="bm-filter-Event">📅 Events</button>
+        <button onclick="filterBookmarks('Merchandise')" class="cat-pill" id="bm-filter-Merchandise">🛍️ Store</button>
+      </div>
+
+      <div class="grid-3" style="margin-top:2.5rem;" id="bookmarks-grid-container"></div>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-about" data-page="about" hidden>
+<main class="about-page-main">
+    <div class="container about-page-container">
+      <section class="about-hero">
+        <span class="kicker" id="about-eyebrow">About FandomVerse</span>
+        <h1 id="about-title">One home for every fandom.</h1>
+        <p id="about-intro"></p>
+        <div class="about-mission"><span aria-hidden="true">✦</span><p id="about-mission"></p></div>
+      </section>
+
+      <section class="about-section" aria-labelledby="about-website-heading">
+        <div class="about-section-heading">
+          <span class="kicker">The website</span>
+          <h2 id="about-website-heading">Made for exploring, built around fans.</h2>
+        </div>
+        <div class="about-feature-grid" id="about-website-grid"></div>
+      </section>
+
+      <section class="about-section" aria-labelledby="about-team-heading">
+        <div class="about-section-heading">
+          <span class="kicker">The team</span>
+          <h2 id="about-team-heading">Different roles, one shared universe.</h2>
+          <p>Our project team brings content, community, and product experience together to make fandom discovery feel simple.</p>
+        </div>
+        <div class="about-team-grid" id="about-team-grid"></div>
+      </section>
+
+      <section class="about-stats-panel" aria-labelledby="about-stats-heading">
+        <div class="about-section-heading">
+          <span class="kicker">The collection</span>
+          <h2 id="about-stats-heading">A growing universe to explore.</h2>
+        </div>
+        <div class="about-stats-grid" id="about-stats-grid"></div>
+      </section>
+    </div>
+  </main>
+</section>
+<section class="spa-page" id="page-contact" data-page="contact" hidden>
+<main class="contact-page-main">
+    <div class="container contact-page-container">
+      <div class="contact-page-heading">
+        <span class="kicker" id="contact-eyebrow">Get in touch</span>
+        <h1 id="contact-title">Talk to the FandomVerse team.</h1>
+        <p id="contact-intro"></p>
+      </div>
+
+      <div class="contact-layout">
+        <section class="contact-form-card" aria-labelledby="contact-form-heading">
+          <div id="contact-success" class="contact-success" role="status" style="display:none;">
+            🎉 Thank you for reaching out! Your message has been sent (demo only).
+          </div>
+          <div class="contact-card-heading">
+            <span class="kicker">Send a message</span>
+            <h2 id="contact-form-heading">How can we help?</h2>
+            <p>This form is a front-end demo and does not send data to a server.</p>
+          </div>
+          <form id="contact-form" onsubmit="event.preventDefault();document.getElementById('contact-form').style.display='none';document.getElementById('contact-success').style.display='block';" class="contact-form">
+            <div class="contact-field">
+              <label for="contact-name">Your name</label>
+              <input id="contact-name" type="text" required class="form-input" placeholder="e.g. Alex Vance" />
+            </div>
+            <div class="contact-field">
+              <label for="contact-email">Email address</label>
+              <input id="contact-email" type="email" required class="form-input" placeholder="alex@example.com" />
+            </div>
+            <div class="contact-field">
+              <label for="contact-subject">Team / subject</label>
+              <select id="contact-subject" class="form-input">
+                <option>General enquiry</option>
+                <option>Editorial enquiry</option>
+                <option>Community and events enquiry</option>
+                <option>Website feedback</option>
+                <option>Store and merchandise enquiry</option>
+              </select>
+            </div>
+            <div class="contact-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" required class="form-input" placeholder="Write your message here..."></textarea>
+            </div>
+            <button class="btn-primary bg-neon contact-submit" type="submit">Send Message</button>
+          </form>
+        </section>
+
+        <aside class="contact-team-panel" aria-labelledby="contact-team-heading">
+          <div class="contact-card-heading">
+            <span class="kicker">Find the right team</span>
+            <h2 id="contact-team-heading">Team contacts</h2>
+          </div>
+          <div class="contact-team-grid" id="contact-team-grid"></div>
+        </aside>
+      </div>
+
+      <section class="contact-map-card" aria-labelledby="contact-map-heading">
+        <div class="contact-map-heading">
+          <div>
+            <span class="kicker">Map & directions</span>
+            <h2 id="contact-map-heading">Find us on the map</h2>
+            <p id="contact-map-note"></p>
+          </div>
+          <div class="contact-map-actions">
+            <button class="btn-secondary contact-gps-button" type="button" onclick="locateOnMap()">◎ Use my location</button>
+            <a class="contact-directions-link" id="contact-directions-link" href="https://www.google.com/maps/dir/?api=1&destination=Tokyo%2C%20Japan" target="_blank" rel="noopener noreferrer">Open directions ↗</a>
+          </div>
+        </div>
+        <p class="contact-location-status" id="contact-location-status" role="status" aria-live="polite">Map preview: Tokyo, Japan.</p>
+        <p class="contact-gps-disclosure">GPS requires your browser's permission. If you continue, your coordinates are sent to Google Maps to display your location.</p>
+        <div class="contact-map-frame-wrap">
+          <iframe id="contact-map-frame" title="Google Map showing the FandomVerse demo map location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?q=Tokyo%2C%20Japan&z=12&output=embed"></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-badge bg-neon">F</span>
+          <span class="logo-text">Fandom<span class="text-neon">Verse</span></span>
+        </a>
+        <p class="footer-description">
+          Portal for Fandom World — one home for anime, gaming, movies, TV, K-Pop, comics and manga fans. All content is original and fan-made for demo purposes.
+        </p>
+        <div class="footer-socials" role="group" aria-label="FandomVerse social media">
+          <span class="footer-social-icon" role="img" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.7" cy="6.7" r="1"/></svg>
+          </span>
+          <span class="footer-social-icon" role="img" aria-label="X" title="X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.8l10.2 16h-3.8L5 4Zm0 16 6.2-7.2M12.8 11.2 19 4"/></svg>
+          </span>
+          <span class="footer-social-icon" role="img" aria-label="YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="4"/><path class="social-fill" d="m10 9 5 3-5 3z"/></svg>
+          </span>
+          <span class="footer-social-icon" role="img" aria-label="Discord" title="Discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7.5c3.3-1.8 6.7-1.8 10 0l2 9c-2 1.5-3.5 2-5 2.3l-1-1.5m-2 0-1 1.5c-1.5-.3-3-.8-5-2.3l2-9Z"/><path d="M9 13h.01M15 13h.01"/></svg>
+          </span>
+        </div>
+      </div>
+      <nav class="footer-column" aria-label="Fandom categories">
+        <h4 class="footer-heading">Fandoms</h4>
+        <ul class="footer-links">
+          <li><a href="category.html?slug=anime">Anime</a></li>
+          <li><a href="category.html?slug=gaming">Gaming</a></li>
+          <li><a href="category.html?slug=movies">Movies</a></li>
+          <li><a href="category.html?slug=tvshows">TV Shows</a></li>
+          <li><a href="category.html?slug=kpop">K-Pop</a></li>
+          <li><a href="category.html?slug=comics">Comics</a></li>
+          <li><a href="category.html?slug=manga">Manga</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-column" aria-label="Explore FandomVerse">
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="trailers.html">Trailers</a></li>
+          <li><a href="merch.html">Store</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="bookmarks.html">My Bookmarks</a></li>
+        </ul>
+      </nav>
+      <div class="footer-column footer-newsletter">
+        <h4 class="footer-heading">Stay Updated</h4>
+        <p class="footer-newsletter-copy">Get the latest fandom news and updates.</p>
+        <form class="footer-newsletter-form" onsubmit="event.preventDefault(); const status = this.nextElementSibling; status.textContent = 'Thanks for joining the FandomVerse newsletter!'; this.reset();">
+          <label class="visually-hidden" for="footer-newsletter-email">Email address</label>
+          <input id="footer-newsletter-email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button class="bg-neon" type="submit">Subscribe</button>
+        </form>
+        <p class="footer-newsletter-status" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2026 FandomVerse. All rights reserved.</span>
+        <div class="footer-meta">
+          <span id="live-clock">🕒 Loading time...</span>
+          <span>👥 Visitors: <strong id="visitor-count">0</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer -->
+  <div id="cart-overlay" class="overlay" onclick="closeCart()"></div>
+  <aside id="cart-drawer" class="drawer">
+    <div class="drawer-header">
+      <h2 style="font-size:1.125rem;font-weight:700;">Your Cart</h2>
+      <button onclick="closeCart()" style="border:none;background:transparent;color:var(--foreground);font-size:1.25rem;cursor:pointer;">✕</button>
+    </div>
+    <div id="cart-items-container" class="drawer-body"></div>
+    <div class="drawer-footer">
+      <div style="display:flex;justify-content:space-between;font-size:1.125rem;font-weight:700;margin-bottom:0.75rem;">
+        <span>Total</span>
+        <span id="cart-total-price" class="text-neon">$0.00</span>
+      </div>
+      <button disabled style="width:100%;border-radius:var(--radius-xl);border:none;background:var(--muted);padding:0.875rem;font-size:0.875rem;font-weight:600;color:var(--muted-foreground);cursor:not-allowed;">
+        Checkout (Demo Only)
+      </button>
+    </div>
+  </aside>
+
+  <!-- Auth Modal -->
+  <div id="auth-overlay" class="overlay" onclick="if(event.target===this)closeAuth()">
+    <div class="modal-box">
+      <button onclick="closeAuth()" style="position:absolute;top:0.75rem;right:0.75rem;border:none;background:transparent;color:var(--foreground);font-size:1.25rem;cursor:pointer;">✕</button>
+      <h2 id="auth-title" style="font-size:1.25rem;font-weight:800;">Welcome back</h2>
+      <p style="font-size:0.75rem;color:var(--muted-foreground);margin-top:0.25rem;">Demo only — no account data stored.</p>
+      
+      <div id="auth-success" style="display:none;margin-top:1.5rem;padding:1rem;border-radius:var(--radius-xl);background:var(--secondary);font-size:0.875rem;">
+        ✨ This is a UI demo. No account was created — enjoy exploring as a guest!
+      </div>
+
+      <form id="auth-form" style="margin-top:1.25rem;display:flex;flex-direction:column;gap:0.75rem;" onsubmit="submitAuthForm(event)">
+        <input type="text" id="auth-name-input" class="form-input" placeholder="Fan name" style="display:none;" />
+        <input type="email" required class="form-input" placeholder="Email address" />
+        <input type="password" required class="form-input" placeholder="Password" />
+        <button id="auth-submit-btn" class="btn-primary bg-neon">Log in</button>
+      </form>
+
+      <button id="auth-toggle-btn" onclick="toggleAuthMode()" style="margin-top:1rem;width:100%;border:none;background:transparent;font-size:0.875rem;color:var(--muted-foreground);cursor:pointer;">
+        New here? Sign up
+      </button>
+    </div>
+  </div>
+
+  <!-- AI Chatbot FAB & Drawer -->
+  <button onclick="toggleChatbot()" class="chatbot-fab bg-neon" aria-expanded="false" aria-controls="chatbot-drawer">
+    💬 Assistant
+  </button>
+
+  <button id="chatbot-backdrop" class="chatbot-backdrop" type="button" onclick="toggleChatbot()" aria-label="Close Verse Assistant"></button>
+  <div id="chatbot-drawer" class="chatbot-drawer" aria-hidden="true" inert>
+    <header class="chatbot-header">
+      <div class="chatbot-heading">
+        <span class="assistant-avatar" aria-hidden="true">🤖</span>
+        <div class="assistant-title-group">
+          <span class="assistant-title">Verse Assistant</span>
+          <span class="assistant-subtitle">Rule-based FAQ bot</span>
+        </div>
+      </div>
+      <div class="chatbot-header-actions">
+        <button onclick="resetChat()" class="chatbot-reset" title="Reset chat" aria-label="Reset chat">
+          <svg class="chatbot-reset-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M4.9 9a7 7 0 0 1 11.6-2L20 12M4 17v-5h5m10.1 3a7 7 0 0 1-11.6 2L4 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Reset</span>
+        </button>
+        <button onclick="toggleChatbot()" class="chatbot-close" aria-label="Close Verse Assistant">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </header>
+    <div id="chat-messages" class="chatbot-messages"></div>
+    
+    <!-- Quick Suggestion Chips -->
+    <div class="chatbot-suggestions" aria-label="Quick suggestions">
+      <button onclick="sendChatMessageText('Tell me about anime')" class="chat-suggestion">✨ Anime Hub</button>
+      <button onclick="sendChatMessageText('Where are the trailers?')" class="chat-suggestion">🎥 Trailers</button>
+      <button onclick="sendChatMessageText('How do I buy merch?')" class="chat-suggestion">🛍️ Store</button>
+      <button onclick="sendChatMessageText('Upcoming events')" class="chat-suggestion">📅 Events</button>
+      <button onclick="sendChatMessageText('How do bookmarks work?')" class="chat-suggestion">❤️ Bookmarks</button>
+    </div>
+
+    <form onsubmit="sendChatMessage(event)" class="chatbot-composer">
+      <input type="text" id="chat-input" class="form-input chat-input" placeholder="Ask Verse Bot..." aria-label="Message Verse Assistant" />
+      <button class="bg-neon chatbot-send" type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-overlay" class="overlay" onclick="closeLightbox()">
+    <div class="modal-box" style="max-width:50rem;padding:1rem;" onclick="event.stopPropagation()">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+        <h3 id="lightbox-title" style="font-size:1rem;font-weight:700;">Trailer</h3>
+        <button onclick="closeLightbox()" style="border:none;background:transparent;color:var(--foreground);font-size:1.25rem;cursor:pointer;">✕</button>
+      </div>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius-xl);">
+        <iframe id="lightbox-iframe" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    function render_index_page() {
+      const categoryGrid = document.getElementById("home-category-grid");
+      if (categoryGrid) {
+        categoryGrid.innerHTML = categories.map(category => `
+          <a href="category.html?slug=${category.slug}" class="card-lift" style="position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius-2xl);border:1px solid var(--border);display:block;">
+            <img src="${images[category.slug]}" alt="${category.name}" loading="lazy" style="position:absolute;inset:0;height:100%;width:100%;object-fit:cover;" />
+            <div style="position:absolute;inset:0;background:linear-gradient(to top,var(--background),transparent 70%);"></div>
+            <div style="position:absolute;bottom:0;padding:0.75rem;"><span style="font-size:1.25rem;">${category.icon || "✨"}</span><p style="font-family:var(--font-display);font-size:0.875rem;font-weight:700;color:#fff;">${category.name}</p></div>
+          </a>`).join('');
+      }
+
+      // Hero Carousel
+      const featured = articles.filter(a => a.featured);
+      if (featured.length > 0) {
+        const cur = featured[0];
+        const container = document.getElementById("hero-carousel-container");
+        if (container) {
+          container.innerHTML = `
+            <div class="card-lift" style="overflow:hidden;border-radius:var(--radius-2xl);border:1px solid var(--border);background:var(--card);box-shadow:var(--shadow-glow);">
+              <video class="hero-featured-video" ${window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'controls' : 'autoplay'} muted loop playsinline preload="metadata" poster="${images[cur.category]}" aria-label="Homepage featured video">
+                <source src="assets/hero%20video.mp4" type="video/mp4" />
+                Aapka browser is video ko play nahi kar sakta.
+              </video>
+              <a href="article.html?id=${cur.id}" style="display:block;padding:1.25rem;color:inherit;text-decoration:none;">
+                <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;color:var(--accent);">Featured · ${catName(cur.category)}</p>
+                <h2 style="font-size:1.25rem;font-weight:800;margin-top:0.25rem;">${cur.title}</h2>
+                <p style="font-size:0.875rem;color:var(--muted-foreground);margin-top:0.25rem;">${cur.excerpt}</p>
+              </a>
+            </div>
+          `;
+        }
+      }
+
+      // Trending Articles
+      const trendEl = document.getElementById("home-trending-container");
+      if (trendEl) {
+        trendEl.innerHTML = articles.filter(a => a.trending).slice(0, 4).map(renderArticleCard).join('');
+      }
+
+      // Upcoming Trailers
+      const trailEl = document.getElementById("home-trailers-container");
+      if (trailEl) {
+        trailEl.innerHTML = media.filter(m => m.type === "video").slice(0, 6).map(m => `
+          <div onclick="openLightbox('${m.url}', '${m.title}')" class="card-lift" style="position:relative;width:18rem;shrink:0;overflow:hidden;border-radius:var(--radius-2xl);border:1px solid var(--border);cursor:pointer;flex-shrink:0;">
+            ${renderBookmarkButton(m.id)}
+            <img src="${images[m.category]}" alt="${m.title}" style="aspect-ratio:16/9;width:100%;object-fit:cover;" />
+            <div style="position:absolute;inset:0;background:linear-gradient(to top, var(--background), transparent);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:2.5rem;">▶️</span>
+            </div>
+            <div style="position:absolute;bottom:0;padding:0.75rem;">
+              <p style="font-size:0.75rem;font-weight:700;color:var(--accent);">${catName(m.category)}</p>
+              <p style="font-size:0.875rem;font-weight:700;">${m.title}</p>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Popular Characters
+      const charEl = document.getElementById("home-characters-container");
+      if (charEl) {
+        charEl.innerHTML = [...characters].sort((a,b) => b.popularity - a.popularity).slice(0, 4).map(renderCharacterCard).join('');
+      }
+
+      // Events Highlights
+      const evEl = document.getElementById("home-events-container");
+      if (evEl) {
+        evEl.innerHTML = [...events].slice(0, 4).map(renderEventCard).join('');
+      }
+
+      // Featured Merch
+      const merchEl = document.getElementById("home-merch-container");
+      if (merchEl) {
+        merchEl.innerHTML = merchandise.filter(m => m.featured).slice(0, 4).map(renderProductCard).join('');
+      }
+    }
+
+    
+  
+</script>
+<script>
+
+    function render_category_page() {
+      const params = getRouteParams();
+      const slug = params.get("slug") || "anime";
+      const cat = categories.find(c => c.slug === slug) || categories[0];
+
+      document.title = `${cat.name} Hub — FandomVerse`;
+
+      // Keep the breadcrumb focused on the current category.
+      const breadcrumbCurrent = document.getElementById("category-breadcrumb-current");
+      if (breadcrumbCurrent) breadcrumbCurrent.innerHTML = `${cat.name} <span aria-hidden="true">›</span>`;
+      document.querySelectorAll("[data-category-link]").forEach(link => {
+        if (link.dataset.categoryLink === cat.slug) link.setAttribute("aria-current", "page");
+        else link.removeAttribute("aria-current");
+      });
+
+      // Hero
+      const heroEl = document.getElementById("cat-hero");
+      heroEl.style.backgroundImage = `linear-gradient(to bottom, rgba(15,15,25,0.5), var(--background)), url('${images[cat.slug]}')`;
+
+      document.getElementById("cat-title").textContent = cat.name;
+      document.getElementById("cat-tagline").textContent = cat.tagline;
+
+      // Render Articles
+      const catArts = articles.filter(a => a.category === cat.slug);
+      document.getElementById("cat-articles-grid").innerHTML = catArts.length ? catArts.map(renderArticleCard).join('') : `<p style="grid-column:1/-1;color:var(--muted-foreground);">No articles found in this category.</p>`;
+
+      // Render Characters
+      const catChars = characters.filter(c => c.category === cat.slug);
+      document.getElementById("cat-characters-grid").innerHTML = catChars.length ? catChars.map(renderCharacterCard).join('') : `<p style="grid-column:1/-1;color:var(--muted-foreground);">No characters found in this category.</p>`;
+
+      // Render category media, galleries, and events from the pre-populated JSON.
+      const catMedia = media.filter(item => item.category === cat.slug);
+      const mediaGrid = document.getElementById("cat-media-grid");
+      if (mediaGrid) mediaGrid.innerHTML = catMedia.length ? catMedia.map(renderMediaCard).join('') : `<p style="grid-column:1/-1;color:var(--muted-foreground);">No media found in this category.</p>`;
+
+      const catEvents = events.filter(item => item.category === cat.slug);
+      const eventsGrid = document.getElementById("cat-events-grid");
+      if (eventsGrid) eventsGrid.innerHTML = catEvents.length ? catEvents.map(renderEventCard).join('') : `<p style="grid-column:1/-1;color:var(--muted-foreground);">No events found in this category.</p>`;
+
+      // Render Merch
+      const catMerch = merchandise.filter(m => m.category === cat.slug);
+      document.getElementById("cat-merch-grid").innerHTML = catMerch.length ? catMerch.map(renderProductCard).join('') : `<p style="grid-column:1/-1;color:var(--muted-foreground);">No merch items found in this category.</p>`;
+    }
+
+    
+  
+</script>
+<script>
+
+    function render_article_page() {
+      const params = getRouteParams();
+      const id = params.get("id") || articles[0].id;
+      const article = articles.find(a => a.id === id) || articles[0];
+
+      document.title = `${article.title} — FandomVerse`;
+
+      // Breadcrumbs
+      document.getElementById("bc-cat").innerHTML = `<a href="category.html?slug=${article.category}" style="color:inherit;">${catName(article.category)}</a>`;
+      document.getElementById("bc-title").textContent = article.title;
+
+      const mainContainer = document.getElementById("article-main-container");
+      const bookmarked = isBookmarked(article.id);
+      const imgUrl = images[article.category] || images.anime;
+
+      mainContainer.innerHTML = `
+        <article>
+          <span style="font-size:0.875rem;font-weight:700;color:var(--accent);text-transform:uppercase;">${catName(article.category)}</span>
+          <h1 style="font-size:2.5rem;font-weight:900;margin-top:0.5rem;line-height:1.2;">${article.title}</h1>
+
+          <div style="margin-top:1.25rem;display:flex;align-items:center;justify-content:space-between;border-y:1px solid var(--border);padding:0.875rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+            <div style="display:flex;gap:1.5rem;font-size:0.875rem;color:var(--muted-foreground);">
+              <span>📅 ${formatDate(article.date)}</span>
+              <span>🔥 ${article.popularity} readers</span>
+            </div>
+            <button onclick="toggleBookmark('${article.id}')" style="border:none;border-radius:var(--radius-xl);background:var(--secondary);padding:0.5rem 1rem;font-size:0.875rem;font-weight:700;color:${bookmarked ? 'var(--primary)' : 'var(--foreground)'};cursor:pointer;">
+              ${bookmarked ? '❤️ Bookmarked' : '🤍 Bookmark'}
+            </button>
+          </div>
+
+          <img src="${imgUrl}" alt="${article.title}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius-2xl);margin-top:2rem;" />
+
+          <div style="margin-top:2rem;font-size:1.125rem;line-height:1.8;color:var(--foreground);white-space:pre-line;">
+            ${article.body}
+          </div>
+
+          <div style="margin-top:2.5rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            ${article.tags.map(t => `<span class="trait-tag">#${t}</span>`).join('')}
+          </div>
+        </article>
+      `;
+
+      // Related
+      const related = articles.filter(a => a.category === article.category && a.id !== article.id).slice(0, 3);
+      document.getElementById("related-articles-container").innerHTML = related.map(renderArticleCard).join('');
+    }
+
+    
+  
+</script>
+<script>
+
+    function render_search_page() {
+      const params = getRouteParams();
+      const q = (params.get("q") || "").trim().toLowerCase();
+
+      document.title = `Search: "${q}" — FandomVerse`;
+      document.getElementById("search-title").textContent = `Results for "${q}"`;
+
+      const input = document.getElementById("search-query-input");
+      if (input) input.value = q;
+
+      const container = document.getElementById("search-results-grid");
+      if (!q) {
+        document.getElementById("search-meta").textContent = "Please enter a term to search across all fandoms.";
+        container.innerHTML = "";
+        return;
+      }
+
+      // Filter articles, characters, events, merchandise
+      const matchedArts = articles.filter(a => a.title.toLowerCase().includes(q) || a.excerpt.toLowerCase().includes(q) || a.category.toLowerCase().includes(q));
+      const matchedChars = characters.filter(c => c.name.toLowerCase().includes(q) || c.bio.toLowerCase().includes(q) || c.series.toLowerCase().includes(q));
+      const matchedEvents = events.filter(e => e.title.toLowerCase().includes(q) || e.location.toLowerCase().includes(q));
+      const matchedMerch = merchandise.filter(m => m.name.toLowerCase().includes(q) || m.description.toLowerCase().includes(q));
+
+      const total = matchedArts.length + matchedChars.length + matchedEvents.length + matchedMerch.length;
+      document.getElementById("search-meta").textContent = `Found ${total} matching items across articles, characters, events, and store items.`;
+
+      if (total === 0) {
+        container.innerHTML = `<p style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted-foreground);">No results found for "${q}". Try searching for anime, gaming, starforge, or hoodie!</p>`;
+        return;
+      }
+
+      let html = "";
+      html += matchedArts.map(renderArticleCard).join('');
+      html += matchedChars.map(renderCharacterCard).join('');
+      html += matchedEvents.map(renderEventCard).join('');
+      html += matchedMerch.map(renderProductCard).join('');
+
+      container.innerHTML = html;
+    }
+
+    
+  
+</script>
+<script>
+
+    let trailersCurrentType = 'all';
+
+    function filterTrailers(t) {
+      trailersCurrentType = t;
+      document.querySelectorAll('#trailers-filter-bar button').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`trail-${t}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      renderPageContent();
+    }
+
+    function render_trailers_page() {
+      const container = document.getElementById("trailers-grid-container");
+      if (!container) return;
+      const filtered = trailersCurrentType === 'all' ? media : media.filter(m => m.type === trailersCurrentType);
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted-foreground);">No media items found.</p>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(renderMediaCard).join('');
+    }
+
+    
+  
+</script>
+<script>
+
+    let merchCurrentCategory = 'all';
+
+    function filterMerch(cat) {
+      merchCurrentCategory = cat;
+      document.querySelectorAll('#merch-filter-bar button').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`merch-${cat}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      renderPageContent();
+    }
+
+    function render_merch_page() {
+      const container = document.getElementById("merch-grid-container");
+      const searchVal = (document.getElementById("merch-search")?.value || "").toLowerCase();
+      if (!container) return;
+
+      let filtered = merchCurrentCategory === 'all' ? merchandise : merchandise.filter(m => m.category === merchCurrentCategory);
+      if (searchVal) {
+        filtered = filtered.filter(m => m.name.toLowerCase().includes(searchVal) || m.description.toLowerCase().includes(searchVal));
+      }
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted-foreground);">No products found matching your search.</p>`;
+      } else {
+        container.innerHTML = filtered.map(renderProductCard).join('');
+      }
+    }
+
+    
+  
+</script>
+<script>
+
+    let eventsCurrentCategory = 'all';
+
+    function filterEvents(cat) {
+      eventsCurrentCategory = cat;
+      document.querySelectorAll('#events-filter-bar button').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`filter-${cat}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      renderPageContent();
+    }
+
+    function render_events_page() {
+      const container = document.getElementById("events-grid-container");
+      if (!container) return;
+      const filtered = eventsCurrentCategory === 'all' ? events : events.filter(e => e.category === eventsCurrentCategory);
+      if (filtered.length === 0) {
+        container.innerHTML = `<p style="grid-column:1/-1;padding:3rem 0;text-align:center;color:var(--muted-foreground);">No events found in this category.</p>`;
+      } else {
+        container.innerHTML = filtered.map(renderEventCard).join('');
+      }
+    }
+
+    
+  
+</script>
+<script>
+
+    function clearAllBookmarks() {
+      state.bookmarks = [];
+      localStorage.setItem("fv_bookmarks", "[]");
+      saveBookmarkNotes({});
+      updateBadges();
+      renderPageContent();
+    }
+
+    let bookmarksCurrentFilter = 'all';
+
+    function filterBookmarks(filterType) {
+      bookmarksCurrentFilter = filterType;
+      document.querySelectorAll('#bookmarks-filter-bar button').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById(`bm-filter-${filterType}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      renderPageContent();
+    }
+
+    function render_bookmarks_page() {
+      const container = document.getElementById("bookmarks-grid-container");
+      if (!container) return;
+
+      const records = state.bookmarks
+        .map(id => ({ id, saved: getBookmarkedContent(id) }))
+        .filter(entry => entry.saved);
+      const notes = getBookmarkNotes();
+      const exportButton = document.querySelector(".bookmarks-export");
+      if (exportButton) exportButton.disabled = records.length === 0;
+
+      // Update badge counts on filter buttons if present
+      const filterBar = document.getElementById("bookmarks-filter-bar");
+      if (filterBar) {
+        const counts = {
+          all: records.length,
+          Article: records.filter(r => r.saved.type === "Article").length,
+          Character: records.filter(r => r.saved.type === "Character").length,
+          Media: records.filter(r => r.saved.type === "Media").length,
+          Event: records.filter(r => r.saved.type === "Event").length,
+          Merchandise: records.filter(r => r.saved.type === "Merchandise").length
+        };
+
+        const btnLabels = {
+          all: `All Cards (${counts.all})`,
+          Article: `📰 Articles (${counts.Article})`,
+          Character: `👤 Characters (${counts.Character})`,
+          Media: `🎬 Media (${counts.Media})`,
+          Event: `📅 Events (${counts.Event})`,
+          Merchandise: `🛍️ Store (${counts.Merchandise})`
+        };
+
+        Object.keys(btnLabels).forEach(key => {
+          const btn = document.getElementById(`bm-filter-${key}`);
+          if (btn) btn.textContent = btnLabels[key];
+        });
+      }
+
+      const filteredRecords = bookmarksCurrentFilter === 'all'
+        ? records
+        : records.filter(r => r.saved.type === bookmarksCurrentFilter);
+
+      if (records.length === 0) {
+        container.innerHTML = `
+          <div class="bookmarks-empty" style="grid-column:1/-1;text-align:center;padding:5rem 0;">
+            <p style="font-size:3rem;">❤️</p>
+            <h3 style="font-size:1.25rem;font-weight:800;margin-top:1rem;">Your Bookmarks List is Empty</h3>
+            <p style="color:var(--muted-foreground);margin-top:0.5rem;">Save articles, media, characters, events, or merchandise with the heart button and they will appear here.</p>
+            <a href="index.html" class="bg-neon" style="display:inline-block;margin-top:1.5rem;border-radius:var(--radius-xl);padding:0.75rem 1.5rem;font-weight:700;color:var(--primary-foreground);">
+              Explore Home Page
+            </a>
+          </div>
+        `;
+        return;
+      }
+
+      if (filteredRecords.length === 0) {
+        container.innerHTML = `
+          <div class="bookmarks-empty" style="grid-column:1/-1;text-align:center;padding:3rem 0;">
+            <p style="font-size:2.25rem;">🔍</p>
+            <h3 style="font-size:1.1rem;font-weight:700;margin-top:0.75rem;">No items found in this category</h3>
+            <p style="color:var(--muted-foreground);margin-top:0.25rem;">Try selecting "All Cards" or saving more items of this type.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filteredRecords.map(({ id, saved: { item, type } }) => {
+        let card;
+        if (type === "Article") card = renderArticleCard(item);
+        else if (type === "Character") card = renderCharacterCard(item);
+        else if (type === "Event") card = renderEventCard(item);
+        else if (type === "Media") card = renderMediaCard(item);
+        else card = renderProductCard(item);
+        return `
+          <article class="bookmark-entry">
+            <div class="bookmark-entry-card">${card}</div>
+            <label class="bookmark-note-label" for="bookmark-note-${id}">Personal note <span>· this browser session only</span></label>
+            <textarea id="bookmark-note-${id}" class="bookmark-note" maxlength="500" placeholder="Add a note for this saved item…" oninput="saveBookmarkNote('${id}',this.value)">${escapeBookmarkText(notes[id] || "")}</textarea>
+          </article>`;
+      }).join("");
+    }
+
+    
+  
+</script>
+<script>
+function render_about_page() {
+  if (!aboutData) return;
+  document.getElementById("about-eyebrow").textContent = aboutData.eyebrow;
+  document.getElementById("about-title").textContent = aboutData.title;
+  document.getElementById("about-intro").textContent = aboutData.intro;
+  document.getElementById("about-mission").textContent = aboutData.mission;
+
+  document.getElementById("about-website-grid").innerHTML = aboutData.website.map(feature => `
+    <article class="about-info-card">
+      <span class="about-card-icon" aria-hidden="true">${feature.icon}</span>
+      <h3>${feature.title}</h3>
+      <p>${feature.description}</p>
+    </article>`).join("");
+
+  document.getElementById("about-team-grid").innerHTML = aboutData.team.map((member, index) => `
+    <article class="about-team-card">
+      <div class="about-team-avatar" aria-hidden="true">${member.icon}</div>
+      <span class="about-team-index">0${index + 1} · FandomVerse</span>
+      <h3>${member.role}</h3>
+      <p>${member.description}</p>
+    </article>`).join("");
+
+  const stats = [
+    [categories.length, "Fandom hubs"],
+    [articles.length, "Curated articles"],
+    [characters.length, "Character profiles"],
+    [events.length, "Fandom events"],
+    [media.length, "Videos, audio & galleries"],
+    [merchandise.length, "Merchandise items"]
+  ];
+  document.getElementById("about-stats-grid").innerHTML = stats.map(([value, label]) => `
+    <div class="about-stat"><strong>${value}</strong><span>${label}</span></div>`).join("");
+}
+</script>
+<script>
+function render_contact_page() {
+  if (!contactData) return;
+  document.getElementById("contact-eyebrow").textContent = contactData.eyebrow;
+  document.getElementById("contact-title").textContent = contactData.title;
+  document.getElementById("contact-intro").textContent = contactData.intro;
+  document.getElementById("contact-map-note").textContent = contactData.map.note;
+
+  document.getElementById("contact-team-grid").innerHTML = contactData.teams.map(team => `
+    <article class="contact-team-card">
+      <span class="contact-team-icon" aria-hidden="true">${team.icon}</span>
+      <h3>${team.name}</h3>
+      <p>${team.description}</p>
+      <a href="mailto:${contactData.email}?subject=${encodeURIComponent(team.subject)}">Email this team <span aria-hidden="true">↗</span></a>
+    </article>`).join("");
+
+  const latitude = contactData.map.latitude;
+  const longitude = contactData.map.longitude;
+  document.getElementById("contact-map-frame").src = `https://maps.google.com/maps?q=${latitude}%2C${longitude}&z=${contactData.map.zoom}&output=embed`;
+  document.getElementById("contact-directions-link").href = `https://www.google.com/maps/dir/?api=1&destination=${latitude}%2C${longitude}`;
+  document.getElementById("contact-location-status").textContent = `Map preview: ${contactData.map.label}.`;
+}
+
+function locateOnMap() {
+  const status = document.getElementById("contact-location-status");
+  if (!navigator.geolocation) {
+    status.textContent = "This browser does not support location access. You can still use the map preview and directions link.";
+    return;
+  }
+
+  status.textContent = "Waiting for your browser's location permission…";
+  navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude, accuracy } = position.coords;
+    const map = contactData.map;
+    const mapFrame = document.getElementById("contact-map-frame");
+    const directions = document.getElementById("contact-directions-link");
+    mapFrame.src = `https://maps.google.com/maps?q=${latitude}%2C${longitude}&z=15&output=embed`;
+    directions.href = `https://www.google.com/maps/dir/?api=1&origin=${latitude}%2C${longitude}&destination=${map.latitude}%2C${map.longitude}`;
+    status.textContent = `Your approximate location is shown (${latitude.toFixed(4)}, ${longitude.toFixed(4)}; accuracy about ${Math.round(accuracy)} m). Directions lead to the demo map center.`;
+  }, error => {
+    const messages = {
+      1: "Location permission was denied. You can enable it in your browser settings or use the map preview.",
+      2: "Your location is currently unavailable. Please try again or use the map preview.",
+      3: "Location request timed out. Please try again."
+    };
+    status.textContent = messages[error.code] || "Unable to get your location. You can still use the map preview.";
+  }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 });
+}
+</script>
+<script>
+let motionObserver = null;
+const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function preparePageMotion(page) {
+  if (!page) return;
+
+  page.querySelectorAll('.card-lift img').forEach(image => {
+    if (!image.hasAttribute('loading')) image.loading = 'lazy';
+    image.classList.add('image-fade');
+    const revealImage = () => image.classList.add('is-loaded');
+    if (image.complete) revealImage();
+    else {
+      image.addEventListener('load', revealImage, { once: true });
+      image.addEventListener('error', revealImage, { once: true });
+    }
+  });
+
+  motionObserver?.disconnect();
+  if (reducedMotionQuery.matches || !('IntersectionObserver' in window)) return;
+
+  const revealTargets = [...page.querySelectorAll('.card-lift, .section-header, .about-info-card, .about-team-card')]
+    .filter(element => element.dataset.motionSeen !== 'true');
+  if (!revealTargets.length) return;
+
+  motionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const element = entry.target;
+      motionObserver.unobserve(element);
+      element.dataset.motionSeen = 'true';
+      element.style.setProperty('--reveal-delay', `${(Number(element.dataset.revealIndex) % 4) * 55}ms`);
+      element.classList.add('scroll-reveal', 'is-entering');
+      element.addEventListener('animationend', () => {
+        element.classList.remove('scroll-reveal', 'is-entering');
+        element.style.removeProperty('--reveal-delay');
+      }, { once: true });
+    });
+  }, { threshold: 0.18 });
+
+  revealTargets.forEach((element, index) => {
+    element.dataset.revealIndex = String(index);
+    motionObserver.observe(element);
+  });
+}
+
+function getRouteParams() { return new URLSearchParams(location.hash.split('?')[1] || ''); }
+function currentRoute() { return (location.hash.slice(1).split('?')[0] || 'home').replace(/^\//, ''); }
+let lastRenderedRoute = null;
+function renderPageContent() {
+  if (!window.fandomDataLoaded) return;
+  const route = currentRoute();
+  const routeKey = location.hash.slice(1).replace(/^\//, '') || 'home';
+  const routeChanged = routeKey !== lastRenderedRoute;
+  const page = document.querySelector(`[data-page="${route}"]`) || document.querySelector('[data-page="index"]');
+  if (routeChanged) {
+    motionObserver?.disconnect();
+    document.querySelectorAll('.scroll-reveal.is-entering').forEach(element => element.classList.remove('scroll-reveal', 'is-entering'));
+    if (route !== 'search') {
+      const searchInput = document.getElementById('search-query-input');
+      if (searchInput) searchInput.value = '';
+    }
+  }
+  document.querySelectorAll('.spa-page').forEach(section => { section.hidden = section !== page; });
+  if (page?.dataset.page !== 'category') {
+    const currentCrumb = document.getElementById('category-breadcrumb-current');
+    if (currentCrumb) currentCrumb.innerHTML = 'Browse categories <span aria-hidden="true">›</span>';
+    document.querySelectorAll('[data-category-link]').forEach(link => link.removeAttribute('aria-current'));
+  }
+  const renderers = { index: render_index_page, category: render_category_page, article: render_article_page, search: render_search_page, trailers: render_trailers_page, merch: render_merch_page, events: render_events_page, bookmarks: render_bookmarks_page, about: render_about_page, contact: render_contact_page };
+  if (page) document.title = page.dataset.page === 'index' ? 'FandomVerse — Portal for Fandom World' : `${page.dataset.page[0].toUpperCase()}${page.dataset.page.slice(1)} — FandomVerse`;
+  renderers[page?.dataset.page]?.();
+  if (routeChanged) {
+    window.scrollTo({ top: 0, behavior: reducedMotionQuery.matches ? 'auto' : 'smooth' });
+    page?.classList.remove('route-enter');
+    requestAnimationFrame(() => {
+      if (page?.isConnected && !page.hidden && lastRenderedRoute === routeKey) page.classList.add('route-enter');
+    });
+  }
+  lastRenderedRoute = routeKey;
+  preparePageMotion(page);
+}
+function spaUrl(route) { return '#' + route; }
+document.addEventListener('click', event => {
+  const link = event.target.closest('a[href]');
+  if (!link) return;
+  const url = new URL(link.href, location.href);
+  const anchorTarget = url.hash && document.getElementById(decodeURIComponent(url.hash.slice(1)));
+  if (anchorTarget) {
+    event.preventDefault();
+    const behavior = reducedMotionQuery.matches ? 'auto' : 'smooth';
+    if (currentRoute() !== 'home') {
+      window.addEventListener('hashchange', () => document.getElementById('home-categories')?.scrollIntoView({ behavior }), { once: true });
+      location.hash = 'home';
+    } else {
+      anchorTarget.scrollIntoView({ behavior });
+    }
+    return;
+  }
+  const routes = { 'index.html':'home', 'category.html':'category', 'article.html':'article', 'search.html':'search', 'trailers.html':'trailers', 'merch.html':'merch', 'events.html':'events', 'bookmarks.html':'bookmarks', 'about.html':'about', 'contact.html':'contact' };
+  const route = routes[url.pathname.split('/').pop()];
+  if (!route) return;
+  event.preventDefault();
+  const nextRoute = route + (url.search ? '?' + url.search.slice(1) : '');
+  const currentRouteWithParams = location.hash.slice(1).replace(/^\//, '');
+  if (route === 'home' && currentRouteWithParams === 'home') {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    location.hash = nextRoute;
+  }
+  document.getElementById('category-breadcrumb-picker')?.removeAttribute('open');
+});
+window.addEventListener('hashchange', renderPageContent);
+document.addEventListener('DOMContentLoaded', renderPageContent);
+</script>
+
+</body>
+</html>
